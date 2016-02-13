@@ -371,9 +371,10 @@ p > .ash
 
 }
 
-@media (min-width: 768px){
+@media only screen and (min-width: 768px) and (max-width: 783px){
+
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
-    margin-right: -15px;
+    margin-right: -35px;
     margin-left: 0;
 }
 }
