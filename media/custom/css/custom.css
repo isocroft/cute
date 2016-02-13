@@ -40,6 +40,7 @@ body{
 
 .jumbotron > .btn-primary{
 	border: none;
+	border-radius: 0px;
 }
 
 .jumbotron > .btn-primary:hover{
@@ -84,7 +85,9 @@ body{
     padding-top: 2px;
     padding-right :25px;
     padding-bottom: 5px;
-    padding-left: 25px
+    padding-left: 25px;
+    font-family:helvetica;
+    font-weight:normal;
 
 
 }
@@ -113,6 +116,81 @@ body{
     border-radius: 5px;
 
 }
+
+.postrow {
+
+}
+
+.post{
+	margin: 10px;
+	width:250px;
+	height:305px;
+	border:1px solid;
+	border-color: #e7e7e7;
+	padding: 0px;
+}
+
+.post > img {
+	width: 100%;
+	height: 200px;
+}
+
+.p-category {
+	font-family: Helvetica;
+	font-weight: lighter;
+	color: #C1BBBB;
+	font-size: 15px;
+	text-align: center;
+
+}
+
+.p-title{
+
+	font-family: Helvetica;
+	font-weight: lighter;
+	color: #000;
+	font-size: 17px;
+	text-align: center;
+
+}
+
+.p-preview{
+	font-family: Helvetica;
+	font-weight: lighter;
+	color: #000;
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
+	padding: 3px;
+
+
+}
+
+.post > .btn-primary{
+	border: none;
+	font-family: helvetica;
+	font-size: 12px;
+	font-weight: lighter;
+	border-radius: 0px;
+	
+}
+
+.post > .btn-primary:hover{
+	font-family: helvetica;
+
+	font-weight: lighter;
+	background: #e5e5e5;
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
 
 
 
