@@ -57,7 +57,7 @@ body{
 }
 
 .profileimg{
-	height: 170px;
+	height: 160px;
 	width: 150px;
 	padding: 10px;
 }
@@ -140,6 +140,10 @@ body{
 
 .post > img {
 	width: 100%;
+	height: 200px;
+}
+
+a > .img-responsive{
 	height: 200px;
 }
 
@@ -281,44 +285,57 @@ p > .ash
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 550px) and (min-width: 480px) {
+@media only screen and (max-width : 549px) and (min-width: 480px) {
 
 	.post {
+		
+		margin-top: 3px;
 		margin-left: 10px;
-		width:400px;
-		height:250px;
+		width:450px;
+		height:178px;
 
 		
 	}
 
-	.post > img {
+	a > .img-responsive {
 		float: left;
-		width: 200px;
+		width: 50%;
+		height: 176px;
+	}
+
+
+	.post > img {
+		float: right;
+		width: 100%;
 		height: 178px;
 	}
 
+	
 
 	.p-category {
 		
 		padding-top: 0px;
 		padding-right: 3px;
 		padding-left: 3px;
-		padding-bottom: 3px;
+		
 
 
 }
 
 .p-title{
-	padding: 3px;
+	margin-top: 3px;
+	margin-bottom: 2px;
+	padding: 0px;
 
 }
 
 .p-preview{
-	float: left;
+	/*float: left;*/
 
-		padding-top: 10px;
+		padding-top: 1px;
 		padding-right: 10px;
 		padding-left: 10px;
+
 	
 
 
