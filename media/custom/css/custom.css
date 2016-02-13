@@ -49,7 +49,7 @@ body{
 
 .profileimg{
 	height: 170px;
-	width: 200px;
+	width: 150px;
 	padding: 10px;
 }
 
@@ -59,3 +59,61 @@ body{
 	padding-top:20%;
 	padding-bottom: 10%;
 }
+
+.navbar-brand > p {
+	font-family: Helvetica;
+	font-size: 48px;
+	font-weight: bold;
+	color: #000;
+	padding-left: 20px;
+
+}
+
+
+
+.navbar-default .navbar-nav>li{
+	
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-right: 3px;
+	margin-left: 3px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+    padding-top: 2px;
+    padding-right :25px;
+    padding-bottom: 5px;
+    padding-left: 25px
+
+
+}
+
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+     background: #e7e7e7;
+    color : #000;
+    border-radius: 5px;
+}
+
+
+
+
+
+.navbar-default .navbar-nav>li:hover {
+    background: #e7e7e7;
+    color : white;
+    border-radius: 5px;
+
+}
+
+.navbar-default .navbar-nav>.active  {
+    background: #e7e7e7;
+    color : white;
+    border-radius: 5px;
+
+}
+
+
+
+
