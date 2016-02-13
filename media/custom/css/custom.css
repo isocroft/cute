@@ -1,0 +1,61 @@
+
+
+
+p{
+	font-weight:lighter;
+	font-family: helvetica;
+}
+
+
+.pad-little
+{
+	padding-top:50px;
+}
+
+body{
+
+}
+
+.whiteonblack
+{
+	background: #000;
+	color: #fff;
+}
+
+
+.jumbotron > p {
+	color:white;
+	font-family: helvetica;
+	font-size: 14px;
+	font-weight: lighter;
+	text-align: center;
+}
+
+.jumbotron > .headertext{
+	font-family: myriad pro;
+	font-weight: bold;
+	font-size: 40px;
+	color: white;
+}
+
+.jumbotron > .btn-primary{
+	border: none;
+}
+
+.jumbotron > .btn-primary:hover{
+	background: #e5e5e5;
+	color: #000;
+}
+
+.profileimg{
+	height: 170px;
+	width: 200px;
+	padding: 10px;
+}
+
+.header{
+	background-image: url('../../images/Nature__039548_.jpg');
+	background-size:cover;
+	padding-top:20%;
+	padding-bottom: 10%;
+}
