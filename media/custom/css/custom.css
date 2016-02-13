@@ -43,6 +43,14 @@ body{
 	border-radius: 0px;
 }
 
+
+.jumbotron > .btn-primary:visited{
+	
+	background: #000;
+	color: #fff;
+}
+
+
 .jumbotron > .btn-primary:hover{
 	background: #e5e5e5;
 	color: #000;
@@ -174,6 +182,13 @@ body{
 	border-radius: 0px;
 
 }
+.post > .btn-primary:visited{
+	font-family: helvetica;
+
+	font-weight: lighter;
+	background: #000;
+	color: #fff;
+}
 
 .post > .btn-primary:hover{
 	font-family: helvetica;
@@ -182,6 +197,7 @@ body{
 	background: #e5e5e5;
 	color: #000;
 }
+
 
 .footer{
 	padding: 10px;
@@ -219,6 +235,8 @@ p > .ash
 
     /* Custom, iPhone Retina */ 
     @media only screen and (min-width : 320px) {
+
+
         
     }
 
