@@ -6,8 +6,10 @@
 			<?php if (have_posts()) : ?><?php while (have_posts()) : the_post(); ?>
 				
 
-				<img src="<?php echo bloginfo('template_url').'/media/images/girl.png'; ?>" class="img-circle img-responsive profileimgtwo">
-				<p><?php the_author(); ?>,
+				<img src="<?php  echo $r = get_avatar_url( get_the_author_meta( 'ID' )); ?>" class="img-circle img-responsive profileimgtwo">
+				<p><?php the_author_firstname(); echo' '; the_author_lastname(); ?>
+				</p><p>
+
 				
 					<?php 
 					$date = date('h:i A jS F Y',get_post_time('U', true));
@@ -108,16 +110,6 @@
 										?>
 
 
-<!-- 
-								<img src="media/images/lion.jpg" class="img-responsive"> -->
-
-
-
-
-
-
-
-
 								<p><?php echo $recent["post_title"]; ?></p>
 							</a>
 
@@ -129,6 +121,10 @@
 
 
 
+					</div>
+					<div class="row">
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+						<?php comment_form(); ?></div>
 					</div>
 
 

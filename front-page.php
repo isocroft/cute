@@ -41,7 +41,7 @@
 
 							<div id="post-<?php the_ID(); ?>" class="col-lg-3 col-md-4 col-sm-3 col-xs-7 post text-center">
 								<a href=" <?php the_permalink(); ?>">
-									<!-- <img src="media/images/dd.jpg" class="img-responsive"> -->
+									
 									<?php if ( has_post_thumbnail($post) ) {
 
 										$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>

@@ -29,6 +29,17 @@ function time_elapsed_string($datetime, $full = false) {
     return $string ? implode(', ', $string) . ' ago' : 'just now';
 }
 
+function wptp_add_categories_to_attachments() {
+    register_taxonomy_for_object_type( 'category', 'attachment' );
+}
+
+// apply tags to attachments
+function wptp_add_tags_to_attachments() {
+    register_taxonomy_for_object_type( 'post_tag', 'attachment' );
+}
+
+
+
 
 
 function wpbootstrap_scripts_with_jquery()
@@ -40,6 +51,10 @@ function wpbootstrap_scripts_with_jquery()
 }
 add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
 add_theme_support( 'post-thumbnails' ); 
+add_action( 'init' , 'wptp_add_categories_to_attachments' );
+add_action( 'init' , 'wptp_add_tags_to_attachments' );
+
+
 
 
 ?>

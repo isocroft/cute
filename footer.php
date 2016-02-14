@@ -3,15 +3,13 @@
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> <p>POPULAR ON MY BLOG</p>
 
+				<?php query_posts(array('orderby' => 'comment_count', 'posts_per_page' => '4'));
+if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
 					
-					<p><a href="#">How to get away with murder <span class="ash">17</span></a></p>
-					<p><a href="#">Prince Charming <span class="ash">14</span></a></p>
-					<p><a href="#">Good will hunting <span class="ash">12</span></a></p>
-					<p><a href="#">I detoxed and here's what happened <span class="ash">10</span></a></p>
-
-
-
-
+					<p><?php the_title(); ?> <a href="<?php the_permalink(); ?>"><span class="ash"><?php comments_number('0','%','%'); ?></span></a></p>
+					
+<?php endwhile; endif;?>
 					
 
 				</div>
