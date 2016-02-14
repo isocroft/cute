@@ -525,6 +525,15 @@ p.body:first-letter {
 	color:#000;
 }
 
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+    width: 50%;
+}
+
+
+
+
 
 
 
