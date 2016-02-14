@@ -334,7 +334,7 @@ p > .ash
 
 
 .content .title{
-	font-size: 40px;
+	font-size: 36px;
 	font-family: helvetica;
 	font-weight: normal;
 	
@@ -379,6 +379,11 @@ p.body:first-letter {
 .thumb-more > a > .img-responsive {
     width: 70px;
 	height:60px;
+}
+
+.prev-next-links{
+	margin-top: 50px;
+	margin-bottom: 30px;
 }
 
 .prev-next-links a {
