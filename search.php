@@ -22,6 +22,13 @@ $search = new WP_Query($search_query);
 global $wp_query;
 $total_results = $wp_query->found_posts;
 $s = $total_results > 1 ? "s" : "";
+$no_result = $total_results == 0 ? true :false ; 
+if($no_result)
+$img = get_bloginfo('template_url').'/media/images/404.png';
+else
+$img = get_bloginfo('template_url').'/media/images/search.jpg';
+
+
 
 get_header(); 
 ?>
@@ -33,8 +40,17 @@ get_header();
 				
 			</div>
 			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 search">
-				<img src="<?php echo bloginfo('template_url').'/media/images/search.jpg'; ?>" class="img-responsive">
-				<p>Yippee! I found <span><?php echo $total_results; ?></span> result<?php echo $s; ?> matching your search for <span>"<?php echo $query_split[1];?>"</span></p>
+
+
+				<img src="<?php echo $img; ?>" class="img-responsive">
+
+				<?php if(!$no_result){ ?><p>Yippee! I found <span><?php echo $total_results; ?></span> result<?php echo $s; ?> matching your search for <span>"<?php echo $query_split[1];?>"</span></p>
+				<?php } else{ ?>
+
+			<p>Oops! I couldn’t found any results matching your search for <span>"<?php echo $query_split[1];?>"</span></p>
+
+
+				<?php }?> 
 
 
                  <?php if (have_posts()): ?>

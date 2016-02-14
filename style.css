@@ -493,6 +493,7 @@ p.body:first-letter {
 {
 	font-size: 12px;
 	font-weight: lighter;
+	padding: 5px;
 }
 
 
