@@ -406,8 +406,58 @@ p.body:first-letter {
 	text-decoration: none;
 }
 
+.search {
+	margin-bottom: 30px;
+}
+
+.search img {
+	width: 150px;
+	height: 150px;
+	margin: auto;
+}
+
+.search p {
+	font-size: 25px;
+	font-family: helvetica;
+
+}
+
+.search > p >span {
+	font-weight: bold;
+	
+}
+
+.result{
+	border: 1px solid #777;
+	padding-right: 10px;
+	margin:30px;
+	height: auto;
+}
+
+.result >  img {
+	float:left;
+	height: auto;
+	width: 100px;
+	height: 90px;
+	margin-right:20px; 
+}
+
+.result > p
+{
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+.result > .s_ptitle {
+	font-size: 17px;
 
 
+}
+
+.result > .s_ppreview {
+	margin-left:20px;
+
+}
 
 
 
