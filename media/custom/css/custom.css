@@ -292,6 +292,10 @@ a > .img-responsive{
 
 }
 
+.footer .navbar-form {
+	padding: 0px;
+}
+
 .ash {
 	border-radius: 5px;
 	border:1px solid #979797;
