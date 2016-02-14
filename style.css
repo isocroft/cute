@@ -267,7 +267,7 @@ a > .img-responsive{
 	font-weight: lighter;
 	color: #000;
 	font-size: 12px;
-	text-align: center;
+	text-align: justify;
 	line-height: 20px;
 	padding: 3px;
 
@@ -363,6 +363,8 @@ p > .ash
 	font-size: 36px;
 	font-family: helvetica;
 	font-weight: normal;
+	text-transform: uppercase;
+	padding-left:10px; 
 	
 }
 
