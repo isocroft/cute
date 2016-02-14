@@ -7,12 +7,12 @@
 				
 
 				<img src="<?php echo bloginfo('template_url').'/media/images/girl.png'; ?>" class="img-circle img-responsive profileimgtwo">
-				<p><?php the_author(); ?></p>
-				<p>
+				<p><?php the_author(); ?>,
+				
 					<?php 
 					$date = date('h:i A jS F Y',get_post_time('U', true));
 
-					echo $r =  time_elapsed_string($date,true); ?> </p>
+					echo $r =  time_elapsed_string($date); ?> </p>
 
 					<p><span class="ashtwo">
 
