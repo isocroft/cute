@@ -14,6 +14,7 @@ a {
 a:hover {
 	text-decoration: none;
 	color: #000;
+	font-weight: bold;
 }
 
 a:visited
@@ -21,6 +22,9 @@ a:visited
 	text-decoration: none;
 	color: #000;
 
+}
+a:active{
+	text-decoration: none;
 }
 
 
@@ -292,6 +296,8 @@ a > .img-responsive{
 
 }
 
+
+
 .footer .navbar-form {
 	padding: 0px;
 }
@@ -434,19 +440,37 @@ p.body:first-letter {
 	height: auto;
 }
 
-.result >  img {
+.result > a > img {
 	float:left;
 	height: auto;
 	width: 75px;
-    height: 78px;
+    height: 71px;
 	margin-right:20px; 
 }
 
-.result > p
+.result > a:active
+{
+	text-decoration: none;
+}
+.result > a:link
+{
+	font-weight: light;
+	text-decoration: none;
+}
+
+.result > a:hover
+{
+	font-weight: lighter;
+	text-decoration: none;
+}
+
+.result > a > p
 {
 	font-size: 12px;
 	font-weight: lighter;
 }
+
+
 
 .result > .s_ptitle {
 	font-size: 17px;
@@ -487,7 +511,7 @@ p.body:first-letter {
 	100% { -webkit-transform: scale(1); }
 }
 
-.post:hover,.thumb-more:hover
+.post:hover,.thumb-more:hover,.result:hover
 {
 	-webkit-animation-name: thumb;
 	-webkit-animation-duration: 400ms;
