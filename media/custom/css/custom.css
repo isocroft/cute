@@ -437,8 +437,8 @@ p.body:first-letter {
 .result >  img {
 	float:left;
 	height: auto;
-	width: 100px;
-	height: 90px;
+	width: 75px;
+    height: 78px;
 	margin-right:20px; 
 }
 
@@ -457,6 +457,20 @@ p.body:first-letter {
 .result > .s_ppreview {
 	margin-left:20px;
 
+}
+
+.pagination > li > a{
+	color:#000;
+}
+
+.pagination > li > a:active{
+	color:#000;
+}
+.pagination > li > a:hover{
+	color:#000;
+}
+.pagination > li > a:visited{
+	color:#000;
 }
 
 
