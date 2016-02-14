@@ -85,26 +85,6 @@
 
 
 
-
-
-
-
-
-
-									<div class="col-lg-3 col-md-4 col-sm-3 col-xs-7 post text-center">
-										<a href="#">
-											<p class="p-category">-- PERSONAL --</p>
-											<h1 class="p-title">Starting a new Life with a new DOG</h1>
-											<p class="p-preview"> From playing with new makeup to slathering on the latest and greatest in skincare every night, my face is rarely bare, From playing with new makeup to slathering on the latest and greatest in skincare every night, my face is rarely bare rom playing with new makeup...</p>
-											<a href="#" class="btn btn-sq-lg btn-primary whiteonblack">
-												READ NOW
-											</a>
-										</a>
-									</div>
-
-
-
-
 								</div>
 							</div>
 

@@ -1,5 +1,5 @@
 /*
-Theme Name: Cute.
+Theme Name: Cute
 Theme URI: https://github.com/lyndachiwetelu/cute
 Description: Literally, a cute wordpress theme that is awesome for blogging. It is quite responsive and you're going to love your content page, search page and 404 page!
 Version: 1.0
@@ -368,6 +368,12 @@ p > .ash
 	
 }
 
+.content .img-responsive{
+	width : 60%;
+	height: 40%;
+	margin: auto;
+}
+
 p.body{
 	display: block;
 	font-family: helvetica;
@@ -375,6 +381,7 @@ p.body{
     font-weight: lighter;
     line-height: 2;
     text-align: justify;
+    
 }
 
 
