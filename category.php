@@ -7,24 +7,15 @@ $category_slug = $categories[0]->slug;
 $category_name = $categories[0]->cat_name;
 
 
-
-// $args = array(
-//     'post_status' => 'inherit',
-// 'posts_per_page' => -1,
-// 'post_type' => 'attachment',
-// );
-
-// $args['tax_query'] = array(
-// array(
-//     'taxonomy' => $category_name,
-//     'terms' => array( $category_slug ),
-//     'field' => 'slug',
-// ),
-// );
-
-// $the_query = new WP_Query( $args );
-
-// print_r($the_query);die;
+$images = get_posts( array('post_type' => 'attachment', 'category__in' => array($category_id))  );
+if ( !empty($images) ) {
+    foreach ( $images as $image ) {
+        $att= wp_get_attachment_image_src( $image->ID, true );
+         $img_url = $att[0];
+    }
+}
+else
+$img_url = false;
 
 
 
@@ -51,7 +42,7 @@ $posts_array = get_posts( $args );
 				
 			</div>
 			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 remove-jumbotron-padding">
-				<div class="jumbotron text-center category-header">
+				<div class="jumbotron text-center <?php if(!$img_url){ ?> category-header-no-img <?php } else {  ?> category-header <?php } ?>">
 					<img src="<?php echo $img_url; ?>" class="img-responsive">
 
 					<a href="#" class="btn btn-sq-lg btn-primary whiteonblack">

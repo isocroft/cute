@@ -16,14 +16,22 @@
 
 					echo $r =  time_elapsed_string($date); ?> </p>
 
-					<p><span class="ashtwo">
+					
 
 						<?php $category = get_the_category();
-						$firstCategory = $category[0]->cat_name;?>
+						foreach ($category as $val) {?>
 
-						<?php echo $firstCategory; ?>
+							<p><span class="ashtwo">
 
-					</span></p>
+							<?php   echo $val->cat_name; ?>
+
+							</span></p>
+						<?php }
+
+						?>
+						
+
+					
 
 				</div>
 				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 content">
