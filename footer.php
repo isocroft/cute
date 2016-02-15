@@ -15,6 +15,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				</div>
 
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+				<?php get_search_form(); ?>
 
 				<p>TAG CLOUD</p>
 
@@ -39,7 +40,14 @@ foreach ( $tags as $tag ) {
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> <p>WANT TO GET NOTIFIED OF MY NEXT POST?</p>
 
-					<?php get_search_form(); ?>
+					<form class="navbar-form" role="search" method="get">
+<div class="input-group">
+						<input type="text" class="form-control" placeholder="Email Address" >
+						<span class="input-group-btn">
+							<button class="btn btn-primary whiteonblack" type="submit">Yes!</button>
+						</span>
+					</div>
+</form>
 					
 
 				</div>

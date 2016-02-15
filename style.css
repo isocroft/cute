@@ -812,7 +812,7 @@ p.body:first-letter {
 @media only screen and (min-width : 1100px) and (max-width: 1214px) {
 
 	.postrow {
-	background: red;
+
 	padding-top:10px;
 	padding-right:0px;
 	padding-left:0px;
@@ -821,7 +821,7 @@ p.body:first-letter {
 }
 
 .postrow > .post{
-	background: #ededed;
+	
 	width: 340px;
 	margin: 5px;
 
@@ -833,7 +833,7 @@ p.body:first-letter {
 }
 
 .p-preview {
-	margin-top: -6px;
+	margin-top: -10px;
 }
 
 
@@ -852,7 +852,7 @@ a > .img-responsive {
 @media only screen and (min-width : 1214px) and (max-width: 1259px) {
 
 	.postrow {
-	background: red;
+		
 	padding-top:10px;
 	padding-right:0px;
 	padding-left:0px;
@@ -861,15 +861,72 @@ a > .img-responsive {
 }
 
 .postrow > .post{
-	background: #ededed;
-	width: 350px;
-	line-height: 0;
+	
+	width: 340px;
+	margin: 5px;
+
+}
+
+.p-title{
+	padding:0px;
+	margin-top: -3px;
+}
+
+.p-preview {
+	margin-top: -10px;
+}
+
+
+a > .img-responsive {
+	height: 250px;
+	width: 80%;
+	margin: auto;
 
 }
 
 
 }
 
+@media only screen and (min-width : 1260px) and (max-width: 1400px) {
+
+	.postrow {
+		
+	padding-top:10px;
+	padding-right:30px;
+	padding-left:30px;
+	padding-bottom: 10px;
+
+}
+
+.postrow > .post{
+	
+	width: 340px;
+	margin: 15px;
+	height: 400px;
+
+}
+
+.p-title{
+	padding:0px;
+	margin-top: -3px;
+}
+
+.p-preview {
+	margin-top: -10px;
+}
+
+
+a > .img-responsive {
+	height: 250px;
+	width: 80%;
+	margin: auto;
+
+}
+
+
+}
+
+}
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1130px) and (max-width: 1259px) {
