@@ -86,6 +86,7 @@ a:active{
 .jumbotron > .btn-primary:hover{
 	background: #e5e5e5;
 	color: #000;
+	font-weight:normal;
 }
 
 .remove-jumbotron-padding .jumbotron{
