@@ -6,7 +6,11 @@ $category_id = $categories[0]->cat_ID;
 $category_slug = $categories[0]->slug;
 $category_name = $categories[0]->cat_name;
 
+// echo '<pre>';
+// print_r($categories);die;
 
+
+//to get category image
 $images = get_posts( array('post_type' => 'attachment', 'category__in' => array($category_id))  );
 if ( !empty($images) ) {
     foreach ( $images as $image ) {
@@ -22,8 +26,8 @@ $img_url = false;
  $args = array(
 	'posts_per_page'   => 6,
 	'offset'           => 0,
-	'category'         => '',
-	'category_name'    => $cat_name,
+	'category'         => $category_id,
+	'category_name'    => $category_name,
 	'orderby'          => 'date',
 	'order'            => 'DESC',
 	'post_type'        => 'post',
