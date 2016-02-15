@@ -103,22 +103,27 @@
 							?>
 
 
-						<div class="col-lg-2 col-md-2 col-sm-4  hidden-xs thumb-more">
+						<div class="col-lg-2 col-md-2 col-sm-4  hidden-xs thumb-more <?php if (!has_post_thumbnail($recent['ID']) ){ echo 'pad-little';
+							} ?> ">
 							<a href="<?php echo get_permalink($recent["ID"]); ?>">
 
 <?php if ( has_post_thumbnail($recent['ID']) ) {
 	
 
 										$url = wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) ); 
-										//echo get_the_post_thumbnail($recent['ID'], 'thumbnail');?>
+										?>
 										<img src="<?php echo $url; ?>" longdesc="<?php the_title(); ?>" alt="<?php the_title(); ?>" class="img-responsive" />
 
 										<?php }
-
 										?>
+											 
+
+										
 
 
 								<p><?php echo $recent["post_title"]; ?></p>
+
+
 							</a>
 
 						</div>

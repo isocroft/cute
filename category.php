@@ -6,8 +6,6 @@ $category_id = $categories[0]->cat_ID;
 $category_slug = $categories[0]->slug;
 $category_name = $categories[0]->cat_name;
 
-// echo '<pre>';
-// print_r($categories);die;
 
 
 //to get category image
@@ -86,7 +84,7 @@ $posts_array = get_posts( $args );
 													$content = substr($content, 0,60);
 												else
 													$content = substr($content, 0,300);
-												echo $content; ?>
+												echo $content; ?>...
 								</p>
 									<?php if (!has_post_thumbnail($post)): ?>
 													<a href="<?php the_permalink(); ?>" class="btn btn-sq-lg btn-primary whiteonblack">

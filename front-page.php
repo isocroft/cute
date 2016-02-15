@@ -68,7 +68,7 @@
 													$content = substr($content, 0,60);
 												else
 													$content = substr($content, 0,300);
-												echo $content; ?></p>
+												echo $content; ?>...</p>
 												<?php if (!has_post_thumbnail($post)): ?>
 													<a href="<?php the_permalink(); ?>" class="btn btn-sq-lg btn-primary whiteonblack">
 														READ NOW
