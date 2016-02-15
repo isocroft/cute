@@ -1,10 +1,17 @@
-<?php get_header(); ?>
+<?php get_header();
+
+$mail =get_option( 'admin-email' );
+$avatar = get_avatar_url($mail);
+
+?>
 
 
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-lg-2 col-md-2 col-sm-3 hidden-xs pad-little">
-			<img src="<?php echo bloginfo('template_url').'/media/images/girl.png'; ?>" class="img-circle img-responsive profileimg">
+		<?php if($avatar){ ?>
+			<img src="<?php echo $avatar; ?>" class="img-circle img-responsive profileimg">
+			<?php }?>
 			<p>
 				<?php $bloginfo = get_bloginfo( 'description');
 				echo $bloginfo;
