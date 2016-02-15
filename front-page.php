@@ -88,7 +88,7 @@ $avatar = get_avatar_url($mail);
 
 
 
-								<div id="post-<?php the_ID(); ?>" class="col-lg-3 col-md-4 col-sm-3 col-xs-7 post text-center">
+								<div id="post-<?php the_ID(); ?>" class="col-lg-4 col-md-4 col-sm-3 col-xs-7 post text-center">
 									<a href=" <?php the_permalink();?>">
 
 										<?php if ( has_post_thumbnail($post) ) {
@@ -114,9 +114,9 @@ $avatar = get_avatar_url($mail);
 												<p class="p-preview">
 													<?php $content = get_the_content();
 													if ( has_post_thumbnail($post))
-														$content = substr($content, 0,60);
+														 $content = substr($content, 0,60);
 													else
-														$content = substr($content, 0,300);
+														$content = substr($content, 0,400);
 													echo $content; ?>...</p>
 													<?php if (!has_post_thumbnail($post)): ?>
 														<a href="<?php the_permalink(); ?>" class="btn btn-sq-lg btn-primary whiteonblack">

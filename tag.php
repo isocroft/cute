@@ -2,7 +2,6 @@
 get_header();
 
 $tag_id = get_query_var('tag_id'); 
-$tag_name = single_tag_title();
 
 $tag = get_term($tag_id);
 $taxonomy = $tag->taxonomy;
@@ -17,7 +16,7 @@ $taxonomy = $tag->taxonomy;
 
 
 //to get category image
-$images = get_posts( array('post_type' => 'attachment', 'category__in' => array($category_id))  );
+$images = get_posts( array('post_type' => 'attachment', 'tag__in' => array($tag_id))  );
 if ( !empty($images) ) {
     foreach ( $images as $image ) {
         $att= wp_get_attachment_image_src( $image->ID, true );
