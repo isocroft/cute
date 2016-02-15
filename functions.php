@@ -65,6 +65,8 @@ function register_my_menu() {
   register_nav_menu('header-menu','Main Header Menu' );
 }
 
+
+
 add_action( 'init', 'register_my_menu' );
 add_action( 'restrict_manage_posts', 'olab_add_image_category_filter' );
 

@@ -4,6 +4,7 @@
 	<div class="row pad-more">
 		<div class="col-lg-2 col-md-2 col-sm-3 hidden-xs left-bar">
 			<?php if (have_posts()) : ?><?php while (have_posts()) : the_post(); ?>
+				<?php $pid = get_the_ID(); ?>
 				
 
 				<img src="<?php  echo $r = get_avatar_url( get_the_author_meta( 'ID' )); ?>" class="img-circle img-responsive profileimgtwo">
@@ -94,7 +95,7 @@
 
 
 						<?php
-						$args = array( 'numberposts' => '3' );
+						$args = array( 'numberposts' => '3','post__not_in'=> array($pid));
 						$recent_posts = wp_get_recent_posts( $args );
 						foreach( $recent_posts as $recent ){ 
 							setup_postdata($recent); 
@@ -122,6 +123,12 @@
 
 
 								<p><?php echo $recent["post_title"]; ?></p>
+								<?php if (!has_post_thumbnail($recent['ID']) ) { ?>
+
+								<span></span>
+
+
+								<?php } ?>
 
 
 							</a>

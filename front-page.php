@@ -38,7 +38,14 @@ $avatar = get_avatar_url($mail);
 						$query->the_post();
 
 						?>
-						<div class="jumbotron header text-center">
+
+
+						<?php if ( has_post_thumbnail($post) ) {
+
+											$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+
+											} ?>
+						<div class="jumbotron header text-center" style="background-image:url(<?php echo $url; ?>)">
 
 
 
@@ -122,7 +129,8 @@ $avatar = get_avatar_url($mail);
 
 
 										<?php endforeach; 
-										wp_reset_postdata();?>
+										wp_reset_postdata();
+										?>
 
 
 

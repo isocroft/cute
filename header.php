@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 
 	<?php wp_head(); ?>
+	
 </head>
 <body>
 	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -65,7 +66,7 @@
 
 						?> 
 
-						<li class="<?php echo $is_active;?>" ><a href="<?php echo $url; ?>"><?php echo $title; ?></a></li>
+						<li class="<?php echo $is_active; ?>" ><a href="<?php echo $url; ?>"><?php echo $title; ?></a></li>
 
 						<?php
 					}
@@ -77,5 +78,4 @@
 			</div>
 		</div>
 	</div>
-
-	?>
+	
