@@ -29,25 +29,13 @@ foreach ( $tags as $tag ) {
 
 					<a href="<?php echo $tag_link; ?>" title="<?php echo $tag_name; ?>"><span class="ash"><?php echo $tag_name; ?></span></a>
 			
-<?php	//$html .= "<a href='{$tag_link}' title='{$tag->name} Tag' class='{$tag->slug}'>";
-	//$html .= "{$tag->name}</a>";
+<?php	
 }
-$html .= '</div>';
-echo $html;
 
 
 ?>
 
 
-					
-
-					
-					<a href="#"><span class="ash">Beauty</span></a>
-					<a href="#"><span class="ash">Software</span></a>
-					<a href="#"><span class="ash">Writing</span></a>
-					<a href="#"><span class="ash">Same Food</span></a>
-					<a href="#"><span class="ash">Gross</span></a>
-					<a href="#"><span class="ash">Oops</span></a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> <p>WANT TO GET NOTIFIED OF MY NEXT POST?</p>
 

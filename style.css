@@ -91,13 +91,15 @@ a:active{
 .remove-jumbotron-padding .jumbotron{
 padding: 0px;
 
+
 }
 
 .category-header {
 	padding: 0px;
 	background:#fff;
-	border: 1px solid #e5e5e5;
+	
 }
+
 .category-header-no-img {
 	padding: 0px;
 	background:#fff;
@@ -106,16 +108,19 @@ padding: 0px;
 
 
 
-.category-header, .category-header-no-img p{
+.category-header p{
+	color:#000;
+}
+ .category-header-no-img p{
 	color:#000;
 }
 
-
-.category-header img {
+.category-header img {;
+	margin-bottom: 0px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 0px;
 
+	border: 1px solid #e5e5e5;
 	height: 400px;
 	width: 700px;
 }
