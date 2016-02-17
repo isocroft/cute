@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!-- 
 	<link rel="stylesheet" type="text/css" href="media/bootstrap/css/bootstrap.min.css">-->
+	<!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway" media="screen"> -->
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 
 	<?php wp_head(); ?>

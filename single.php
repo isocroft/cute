@@ -58,9 +58,9 @@
 						</p>
 
 
-						<div class="container">
 							<div class="row prev-next-links">
-								<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"><p>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 prev">
+								<p>
 							<!-- <a href="">
 
 							STARTING A NEW LIFE WITH A DOG</a> -->
@@ -71,7 +71,7 @@
 							<?php } ?>
 
 						</p></div>
-						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"><p>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 next"><p>
 							<?php if(get_adjacent_post(true, '', false)) { ?>
 							<?php next_post_link(); ?>
 
@@ -137,7 +137,7 @@
 				<?php //comments_template( '/short-comments.php' ); ?>
 
 
-				</div>
+			
 
 
 

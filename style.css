@@ -13,7 +13,7 @@ Tags: responsive, black, sticky-post, nice, blog
 
 p{
 	font-weight:lighter;
-	font-family: helvetica;
+	font-family: Helvetica;
 }
 
 a {
@@ -57,7 +57,7 @@ a:active{
 
 .jumbotron > p {
 	color:white;
-	font-family: helvetica;
+	font-family: Helvetica;
 	font-size: 17px;
 	font-weight: lighter;
 	text-align: center;
@@ -232,7 +232,7 @@ padding: 0px;
 	padding-right :25px;
 	padding-bottom: 5px;
 	padding-left: 25px;
-	font-family:helvetica;
+	font-family:Helvetica;
 	font-weight:lighter;
 
 
@@ -275,7 +275,7 @@ padding: 0px;
 .post{
 	margin: 20px;
 	width:430px;
-	height:450px;
+	height:auto;
 	border:1px solid;
 	border-color: #e7e7e7;
 	padding: 0px;
@@ -291,7 +291,7 @@ padding: 0px;
 }
 
 a > .img-responsive{
-	height: 300px;
+	height: auto;
 	width: 80%;
 	margin: auto;
 }
@@ -332,14 +332,14 @@ a > .img-responsive{
 
 .post > .btn-primary{
 	border: none;
-	font-family: helvetica;
+	font-family: Helvetica;
 	font-size: 12px;
 	font-weight: lighter;
 	border-radius: 0px;
 
 }
 .post > .btn-primary:visited{
-	font-family: helvetica;
+	font-family: Helvetica;
 
 	font-weight: lighter;
 	background: #000;
@@ -347,7 +347,7 @@ a > .img-responsive{
 }
 
 .post > .btn-primary:hover{
-	font-family: helvetica;
+	font-family: Helvetica;
 
 	font-weight: lighter;
 	background: #e5e5e5;
@@ -363,7 +363,7 @@ a > .img-responsive{
 .footer > p {
 	font-weight: lighter;
 	font-size: 20px;
-	font-family: helvetica;
+	font-family: Helvetica;
 	color:#000;
 
 }
@@ -378,7 +378,7 @@ a > .img-responsive{
 	border-radius: 5px;
 	border:1px solid #979797;
 	background: #d8d8d8;
-	font-family: helvetica;
+	font-family: Helvetica;
 	font-weight: lighter;
 	color: #000;
 	padding: 5px;
@@ -389,7 +389,7 @@ a > .img-responsive{
 .ashtwo {
 	border-radius: 5px;
 	background: #d8d8d8;
-	font-family: helvetica;
+	font-family: Helvetica;
 	font-weight: lighter;
 	color: #000;
 	padding: 3px;
@@ -418,7 +418,7 @@ p > .ash
 
 .content .title{
 	font-size: 36px;
-	font-family: helvetica;
+	font-family: Helvetica;
 	font-weight: normal;
 	text-transform: uppercase;
 	padding-left:10px;
@@ -434,7 +434,7 @@ p > .ash
 
 p.body{
 	display: block;
-	font-family: helvetica;
+	font-family: Helvetica;
     font-size: 18px;
     font-weight: lighter;
     line-height: 1.6;
@@ -445,7 +445,7 @@ p.body{
 
 p.body:first-letter {
     text-transform: uppercase;
-    font-family: helvetica;
+    font-family: Helvetica;
     font-size: 36px;
     font-weight: normal;
 }
@@ -480,8 +480,19 @@ p.body:first-letter {
 }
 
 .prev-next-links{
-	margin-top: 50px;
-	margin-bottom: 30px;
+	
+	text-transform: uppercase;
+/*	margin-top: 50px;
+	margin-bottom: 30px;*/
+	margin: auto;
+}
+
+.prev-next-links > .prev {
+ float:left;
+}
+
+.prev-next-links > .next {
+ float:left;
 }
 
 .prev-next-links a {
@@ -512,7 +523,7 @@ p.body:first-letter {
 
 .search p {
 	font-size: 25px;
-	font-family: helvetica;
+	font-family: Helvetica;
 
 }
 
@@ -520,6 +531,13 @@ p.body:first-letter {
 	font-weight: bold;
 	
 }
+
+.prev-next-container {
+
+	padding-left: 0px;
+
+}
+
 
 .result{
 	border: 1px solid #777;
