@@ -28,15 +28,30 @@ $img_url = false;
 
 
 
+
+
+$display_count  = get_option('posts_per_page');
+
+
+
+// Next, get the current page
+$paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
+
+// After that, calculate the offset
+$offset = ( $paged - 1 ) * $display_count;
+
+
+
  $args = array(
-	'posts_per_page'   => 6,
-	'offset'           => 0,
+	'posts_per_page'   => $display_count,
+	'offset'           => $offset,
 	'tag_id'			   => $tag_id,
 	'taxonomy'		=> $taxonomy,
 	'orderby'          => 'date',
 	'order'            => 'DESC',
 	'post_type'        => 'post',
 	'post_status'      => 'publish',
+	'paged'             => $paged,
 	'suppress_filters' => true 
 );
 $posts_array = get_posts( $args ); 
@@ -116,25 +131,10 @@ $posts_array = get_posts( $args );
 		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 		</div>
 		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pagination-row">
-				<nav>
-					<ul class="pagination">
-						<li>
-							<a href="#" aria-label="Previous">
-								<span aria-hidden="true">&laquo;</span>
-							</a>
-						</li>
-						<li><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li>
-							<a href="#" aria-label="Next">
-								<span aria-hidden="true">&raquo;</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
+			
+								<?php if (function_exists("pagination")) {
+									pagination($additional_loop->max_num_pages);
+								} ?>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 		</div>
