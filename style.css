@@ -608,19 +608,7 @@ p > img.alignnone{
 
 
 
-.pagination > li > a {
-position: relative;
-    float: left;
-    padding: 6px 12px;
-    margin-left: -1px;
-    line-height: 1.42857143;
-    color: #000;
-    text-decoration: none;
-    background-color: #fff;
-    border: 1px solid #ddd;
-}
- 
-.pagination span, .pagination a {
+.pagination >li > span, .pagination a {
 position: relative;
     float: left;
     padding: 6px 12px;

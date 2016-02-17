@@ -24,7 +24,10 @@ function pagination($pages = '', $range = 4)
  
      if(1 != $pages)
      {
-         echo "<ul class=\"pagination\"><span>Page ".$paged." of ".$pages."</span>";
+         echo "
+         <nav>
+         <ul class=\"pagination\"> 
+         <li><span>Page ".$paged." of ".$pages."</span></li>";
          if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<li aria-label='Previous'><a href='".get_pagenum_link(1)."'>&laquo; First</a></li>";
          if($paged > 1 && $showitems < $pages) echo "<li><a href='".get_pagenum_link($paged - 1)."'>&lsaquo; Previous</a></li>";
  
@@ -38,7 +41,7 @@ function pagination($pages = '', $range = 4)
  
          if ($paged < $pages && $showitems < $pages) echo "<li aria-label='Next'><a href=\"".get_pagenum_link($paged + 1)."\">Next &rsaquo;</a></li>";  
          if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<li><a href='".get_pagenum_link($pages)."'>Last &raquo;</a></li>";
-         echo "</ul>\n";
+         echo "</ul></nav>";
      }
 }
 
