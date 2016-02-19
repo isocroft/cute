@@ -44,10 +44,10 @@ get_header();
 
 				<img src="<?php echo $img; ?>" class="img-responsive">
 
-				<?php if(!$no_result){ ?><p>Yippee! I found <span><?php echo $total_results; ?></span> result<?php echo $s; ?> matching your search for <span>"<?php echo $query_split[1];?>"</span></p>
+				<?php if(!$no_result){ ?><p align='center'>Yippee! I found <span><?php echo $total_results; ?></span> result<?php echo $s; ?> matching your search for <span>"<?php echo $query_split[1];?>"</span></p>
 				<?php } else{ ?>
 
-			<p>Oops! I couldn’t found any results matching your search for <span>"<?php echo $query_split[1];?>"</span></p>
+			<p align='center'>Oops! I couldn’t find any results matching your search for <span>"<?php echo $query_split[1];?>"</span></p>
 
 
 				<?php }?> 
