@@ -25,9 +25,6 @@ $s = $total_results > 1 ? "s" : "";
 $no_result = $total_results == 0 ? true :false ; 
 if($no_result)
 $img = get_bloginfo('template_url').'/media/images/404.png';
-else
-$img = get_bloginfo('template_url').'/media/images/search.jpg';
-
 
 
 get_header(); 
@@ -44,47 +41,16 @@ get_header();
 
 				<img src="<?php echo $img; ?>" class="img-responsive">
 
-				<?php if(!$no_result){ ?><p>Yippee! I found <span><?php echo $total_results; ?></span> result<?php echo $s; ?> matching your search for <span>"<?php echo $query_split[1];?>"</span></p>
-				<?php } else{ ?>
+				<?php if($no_result){ ?><p align='center'>Uh oh! The Page You Are Looking For Does Not Exist!</p>
+				<p align='center'>Maybe you should search for it below:</p>
+				<?php get_search_form()
+				?>
+				<?php } ?> 
 
-			<p align="center">Oops! The page you are looking for does not exist!</p>
-<?php get_search_form(); ?>
-
-				<?php }?> 
-
-
-                 <?php if (have_posts()): ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-
-				<div class="result">
-				<a href="<?php the_permalink(); ?>">
-
-				<?php if ( has_post_thumbnail($post) ) {
-
-										$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-										<img src="<?php echo $url; ?>" longdesc="<?php the_title(); ?>" alt="<?php the_title(); ?>" class="img-responsive" />
-
-										<?php }
-
-										?>
-					<!-- <img src="media/images/cat.jpg" class="img-responsive"> -->
-					<p class="s_ptitle"><?php the_title(); ?></p>
-					<p class="s_ppreview">
-					<?php $content = get_the_content();
-													$content = substr($content, 0,160);
-												echo $content; ?>
-
-						
-					</p>
-					</a>
+				
 
 
-				</div>
-
-
-			<?php endwhile; ?>
-		<?php endif; ?>
-
+                 
 
 			</div>
 
