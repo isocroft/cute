@@ -10,6 +10,9 @@ Tags: responsive, black, sticky-post, nice, blog
 
 @import url('media/bootstrap/css/bootstrap.css'); 
 
+body{
+
+}
 
 p{
 	font-weight:lighter;
@@ -240,8 +243,8 @@ padding: 0px;
 
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-	background: #e7e7e7;
-	color : #000;
+	background: #000;
+	color : #fff;
 	border-radius: 5px;
 }
 
@@ -263,22 +266,80 @@ padding: 0px;
 
 }
 
+
+.containerm {
+  padding: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 800px;
+  display: flex;
+  flex-flow: column wrap
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+​
+.item {
+  background-color: blue;
+  height: 150px;
+  width: 31%;
+  margin: 1%;
+  padding: 10px;
+}
+​
+.item:nth-child(2) {
+  background-color: red;
+  height: 250px;
+}
+​
+.item:nth-child(3) {
+  height: 190px;
+}
+​
+.item:nth-child(4) {
+  background-color: orange;
+  height: 220px;
+}
+
+
+.item img{
+	width:33%;
+}
+
+
+
+
 .postrow {
-	
+  
 	padding-top:10px;
 	padding-right: 70px;
 	padding-left: 70px;
 	padding-bottom: 10px;
+	
 
 }
 
 .post{
+	display: inline-block;
 	margin: 20px;
 	width:430px;
 	height:auto;
 	border:1px solid;
 	border-color: #e7e7e7;
 	padding: 0px;
+}
+
+.masonry{
+	column-count: 4;
+    column-gap: 1em;
+
+
+}
+
+.item{
+	background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 400px;
 }
 
 .post a:hover{
@@ -443,11 +504,14 @@ p.body{
 }
 
 
+
 p.body:first-letter {
     text-transform: uppercase;
     font-family: Helvetica;
     font-size: 36px;
     font-weight: normal;
+    float:left;
+     margin: -19px 3px -5px 0px;
 }
 
 .thumb-more

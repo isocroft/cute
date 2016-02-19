@@ -72,6 +72,7 @@ $avatar = get_avatar_url($mail);
 
 
 
+
 						<div class="container-fluid">
 							<div class="row postrow">
 
@@ -154,6 +155,18 @@ $avatar = get_avatar_url($mail);
 
 									</div>
 								</div>
+
+
+
+												<div class="containerm">
+  <div class="item">Hello this is what I mean by masonry<img src="http://www.worthytoshare.net/wp-content/uploads/2014/03/8876509-lily-pretty-girl.jpg"></div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item">4</div>
+  <div class="item">5</div>
+  <div class="item">6</div>
+</div>
+
 
 
 							</div>

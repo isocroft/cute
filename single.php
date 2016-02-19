@@ -3,6 +3,7 @@
 <div class="container-fluid">
 	<div class="row pad-more">
 		<div class="col-lg-2 col-md-2 col-sm-3 hidden-xs left-bar">
+		
 			<?php if (have_posts()) : ?><?php while (have_posts()) : the_post(); ?>
 				<?php $pid = get_the_ID(); ?>
 				
