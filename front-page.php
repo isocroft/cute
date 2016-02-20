@@ -158,45 +158,34 @@ $avatar = get_avatar_url($mail);
 
 
 
-												<div class="containerm">
-  <div class="item">Hello this is what I mean by masonry<img src="http://www.worthytoshare.net/wp-content/uploads/2014/03/8876509-lily-pretty-girl.jpg"></div>
-  <div class="item">2</div>
-  <div class="item">3</div>
-  <div class="item">4</div>
-  <div class="item">5</div>
-  <div class="item">6</div>
-</div>
+																								</div>
+																								<div class="col-lg-1 col-md-2 hidden-sm hidden-xs"></div>
+
+																							</div>
+																							<div class="row">
+																								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+																								</div>
+																								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pagination-row">
+
+
+																									<?php if (function_exists("pagination")) {
+																										pagination($additional_loop->max_num_pages);
+																									} ?>
 
 
 
-							</div>
-							<div class="col-lg-1 col-md-2 hidden-sm hidden-xs"></div>
-
-						</div>
-						<div class="row">
-							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pagination-row">
-
-
-								<?php if (function_exists("pagination")) {
-									pagination($additional_loop->max_num_pages);
-								} ?>
-
-								
-
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-							</div>
+																								</div>
+																								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+																								</div>
 
 
 
 
 
 
-						</div>
+																							</div>
 
-					</div>
+																						</div>
 
-					<?php get_sidebar(); ?>
-					<?php get_footer(); ?>
+																						<?php get_sidebar(); ?>
+																						<?php get_footer(); ?>
