@@ -78,6 +78,7 @@ $posts_array = get_posts( $args );
 
 				<div class="container-fluid">
 					<div class="row postrow">
+					<div id="columns">
 
 					<?php foreach ($posts_array as $post) {
 						setup_postdata( $post );
@@ -118,6 +119,7 @@ $posts_array = get_posts( $args );
 
 
 
+					</div>
 					</div>
 				</div>
 
