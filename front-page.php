@@ -72,8 +72,12 @@ $avatar = get_avatar_url($mail);
 
 
 
+
 						<div class="container-fluid">
 							<div class="row postrow">
+
+								<div id="columns">
+
 
 
 								<?php 
@@ -149,17 +153,25 @@ $avatar = get_avatar_url($mail);
 										wp_reset_postdata();
 										?>
 
-
+										</div>
 
 
 									</div>
 								</div>
 
 
+
 							</div>
+
+
+
+
 							<div class="col-lg-1 col-md-2 hidden-sm hidden-xs"></div>
 
 						</div>
+
+
+
 						<div class="row">
 							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 							</div>
@@ -170,7 +182,7 @@ $avatar = get_avatar_url($mail);
 									pagination($additional_loop->max_num_pages);
 								} ?>
 
-								
+
 
 							</div>
 							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">

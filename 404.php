@@ -1,9 +1,4 @@
 <?php
-/*
-Template Name: Search Page
-*/
-?>
-<?php
 global $query_string;
 
 $query_args = explode("&", $query_string);
