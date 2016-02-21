@@ -386,10 +386,78 @@ a > .img-responsive{
 
 .post > .btn-primary:hover{
 	font-family: Helvetica;
-
 	font-weight: lighter;
 	background: #e5e5e5;
 	color: #000;
+}
+
+
+/*style for comments*/
+cite {
+	font-style: normal;
+}
+.comment{
+	font-weight: normal;
+	font-family: Helvetica, 'Open Sans';
+	font-size: 18px;
+	font-style: normal;
+}
+
+.comment .comment-meta{
+ padding-left:50px;
+ float: right;
+}
+
+.comment > p{
+	
+}
+.depth-1{
+	border: 1px solid #e5e5e5;
+	padding: 10px;
+	margin:15px;
+	border-radius: 5px;
+
+
+}
+
+.depth-2{
+	background: #efefef;
+	padding:10px;
+	border-radius: 5px;
+}
+
+
+.comment-author{
+	font-weight: normal;
+	font-family: Helvetica, 'Open Sans';
+	font-size: 18px;
+	font-style: normal;
+}
+
+.comment-author img{
+	width: 80px;
+	height: 80px;
+}
+
+#respond{
+	padding-left:60px; 
+}
+
+textarea#comment {
+	width: 80%;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+
+}
+
+input[type=submit] {
+	background: #000;
+	color: #fff;
+	border: 0px;
+	border-radius:5px;
+	padding: 5px;
 }
 
 

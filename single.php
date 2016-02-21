@@ -135,7 +135,7 @@
 
 
 					</div>
-				<?php //comments_template( '/short-comments.php' ); ?>
+				<?php comments_template( '/short-comments.php' ); ?>
 
 
 			
