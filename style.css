@@ -356,6 +356,7 @@ a > .img-responsive{
 
 
 .footer{
+	margin-top:240px; 
 	padding: 10px;
 	background: #f2f2f2;
 }
@@ -606,7 +607,22 @@ p > img.alignnone{
 
 }
 
+#containah {
+    border: 2px dashed #444;
+    height: 125px;
+    
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
 
+
+.big-form.navbar-form .input-group > .form-control{
+	width:500px;
+	height:60%;
+	
+	
+}
 
 .pagination >li > span, .pagination a {
 position: relative;

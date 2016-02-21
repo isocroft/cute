@@ -40,12 +40,44 @@ get_header();
 
 
 				<img src="<?php echo $img; ?>" class="img-responsive">
+				<br>
 
 				<?php if($no_result){ ?><p align='center'>Uh oh! The Page You Are Looking For Does Not Exist!</p>
 				<p align='center'>Maybe you should search for it below:</p>
-				<?php get_search_form()
-				?>
-				<?php } ?> 
+				<br>
+	<div align='center'>			
+<form class="navbar-form big-form" role="search" action="<?php echo home_url( '/' ); ?>" method="get">
+<div class="input-group">
+						<input type="text" class="form-control" placeholder="Try searching for something else" name="s" id="search" value="<?php the_search_query(); ?>">
+						<span class="input-group-btn">
+							<button class="btn btn-primary whiteonblack" type="submit">Go!</button>
+						</span>
+					</div>
+</form>
+</div>
+
+	<div align='center'>
+
+<h3>Side Note: I found some unrelated hot stuff though. You might like these:</h3>
+<div class="recents">
+<?php $recent_posts = wp_get_recent_posts();
+foreach( $recent_posts as $recent ){
+    if($recent['post_status']=="publish"){
+	if ( has_post_thumbnail($recent["ID"])) {
+		echo '<style="padding:5px;border:2px solid black;">
+		<a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' .   get_the_post_thumbnail($recent["ID"], 'thumbnail'). $recent["post_title"].'</a></li> ';
+	}else{
+		echo '<style="padding:5px;border:2px solid black;">
+		<a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a></li> ';
+	}
+     }
+}
+?>
+</div>
+
+	</div>
+
+<?php } ?> 
 
 				
 
@@ -60,7 +92,6 @@ get_header();
 		
 
 	</div>
-
 
 
 
