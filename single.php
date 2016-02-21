@@ -128,7 +128,7 @@
 						<div class="row before-thumb-more-row">
 							<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs left-bar">
 							</div>
-							<h4>You might Like my recent Posts: </h4>
+							<h4>You Might Like These: </h4>
 						</div>
 
 						<div class="row thumb-more-row">

@@ -43,6 +43,8 @@
 
 					$menu_locations = get_nav_menu_locations(); 
 					$menu = $menu_locations[ 'header-menu' ]; 
+
+					if($menu){
 					$menu = wp_get_nav_menu_items( $menu,$args); 
 
 
@@ -73,6 +75,8 @@
 
 						<?php
 					}
+
+				}
 
 					?>
 
