@@ -383,6 +383,7 @@ cite {
 	font-style: normal;
 }
 .comment{
+
 	font-weight: normal;
 	font-family: Helvetica, 'Open Sans';
 	font-size: 14px;
@@ -397,6 +398,13 @@ cite {
 .comment > p{
 	
 }
+
+.commentlist{
+margin-left: 25%;
+width: 50%;
+
+}
+
 .depth-1{
 	border: 1px solid #e5e5e5;
 	padding: 10px;
@@ -426,11 +434,12 @@ cite {
 }
 
 #respond{
+	margin-left: 25%;
 	padding-left:60px; 
 }
 
 textarea#comment {
-	width: 80%;
+	width: 60%;
 	height: 120px;
 	border: 3px solid #cccccc;
 	padding: 5px;
@@ -532,7 +541,7 @@ p > .ash
 	
 }
 
-.content .img-responsive.profileimgtwo{
+.img-responsive.profileimgtwo{
 	height: 70px;
 	width: 72px;
 	float: left;
@@ -548,6 +557,17 @@ p.body{
 	line-height: 1.6;
 	text-align: justify;
 	padding: 20px;
+
+}
+
+.content {
+
+	font-family: Helvetica;
+	font-size: 18px;
+	font-weight: lighter;
+	line-height: 1.6;
+	text-align: justify;
+	
 
 }
 
@@ -574,15 +594,23 @@ hr{
 	height: 5px;
 }
 
-
+/*
 .meta-post {
 	border-top: 1px solid #e5e5e5; 
 	border-bottom: 1px solid #e5e5e5; 
 	padding:20px;
+}*/
+
+.post-meta {
+	border-top: 2px solid #e5e5e5; 
+	border-bottom: 2px solid #e5e5e5; 
+	margin-left: 80px;
+	padding: 10px; 
 }
 
 .nom {
 	margin:0 0 0 0px;
+
 }
 
 .thumb-more
@@ -605,12 +633,17 @@ hr{
 }*/
 
 .thumb-more-row{
-margin-bottom: 200px;
+margin-top:30px;
+margin-bottom: 100px;
+padding-left: 10px;
+margin-left:30px; 
 
 }
 
 .before-thumb-more-row{
-padding-left: 35px;
+padding-left: 10px;
+margin-top:30px;
+margin-left:30px;
 
 }
 
@@ -641,9 +674,11 @@ background:#000;
 }
 
 .prev-next-links{
-	padding: 20px;
+	padding: 10px;
 	width: 100%;
 	text-transform: uppercase;
+	margin-top:30px;
+	margin-left:10px; 
 }
 
 .prev-next-links > .prev {
@@ -771,18 +806,34 @@ background:#000;
 
 /* Styles for POST Images */
 
-p > img.aligncenter {
+ img.aligncenter {
+ 	display: block;
+	width: 400px;
+	height:auto;
+	margin-left: auto;
+	margin-right: auto;
+	
 
 }
-p > img.alignleft {
+ img.alignleft {
+ 	float: left;
+	width: 400px;
+	height: auto;
+	margin: 10px;
 
 }
-p > img.alignright {
-	border: 2px solid red;
+img.alignright {
 	float: right;
+	width: 400px;
+	height: auto;
+	margin: 10px;
 
 }
-p > img.alignnone{
+img.alignnone{
+	float: left;
+	width: 400px;
+	height: auto;
+	margin: 10px;
 
 }
 
