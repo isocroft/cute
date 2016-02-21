@@ -71,7 +71,6 @@ a:active{
 	font-weight: bold;
 	font-size: 40px;
 	color: white;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .jumbotron > .btn-primary{
@@ -224,7 +223,7 @@ padding: 0px;
 .navbar-default .navbar-nav>li{
 	
 	margin-top: 15px;
-	margin-bottom: 15px;
+	/*margin-bottom: 15px;*/
 	margin-right: 3px;
 	margin-left: 3px;
 }
@@ -233,7 +232,7 @@ padding: 0px;
 	color: #000;
 	padding-top: 2px;
 	padding-right :25px;
-	padding-bottom: 5px;
+	/*padding-bottom: 5px;*/
 	padding-left: 25px;
 	font-family:Helvetica;
 	font-weight:lighter;
@@ -243,9 +242,9 @@ padding: 0px;
 
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-	background: #000;
-	color : #fff;
-	border-radius: 5px;
+	background: none;
+	color : #000;
+	border-bottom: 5px solid #000;
 }
 
 
@@ -256,15 +255,12 @@ padding: 0px;
 	background: #e7e7e7;
 	color : white;
 	border-radius: 5px;
+	
+
 
 }
 
-.navbar-default .navbar-nav>.active  {
-	background: #e7e7e7;
-	color : white;
-	border-radius: 5px;
 
-}
 
 
 .postrow {
