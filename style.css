@@ -819,6 +819,47 @@ background:#000;
 
 
 
+.page-header{
+opacity:1;
+padding:0px;
+background: #d8d8d8;
+
+}
+
+.page-header img {
+	height: 350px;
+	width: 50%;
+	margin-left:30%;
+	margin-right:30%;
+}
+
+
+.effect-over
+{
+
+ background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+	
+}
+
+.page-header-heading{
+	margin-left:30px;
+	font-size: 100px;
+	font-family: Myriad pro;
+	font-weight: bold;
+	margin-top: -30%;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+
+
+
 
 /* Styles for POST Images */
 
