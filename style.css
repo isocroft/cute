@@ -12,6 +12,8 @@ Tags: responsive, black, sticky-post, nice, blog
 
 body{
 
+
+
 }
 
 p{
@@ -468,7 +470,7 @@ input[type=submit] {
 
 
 .footer{
-	margin-top:240px; 
+	margin-top:20px; 
 	padding: 10px;
 	background: #f2f2f2;
 }
@@ -857,6 +859,18 @@ background: #d8d8d8;
 	text-align: center;
 
 }
+
+
+
+
+
+
+#wpadminbar{
+	margin-top:55px;
+}
+
+
+
 
 
 
