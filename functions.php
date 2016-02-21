@@ -100,6 +100,8 @@ function pagination($pages = '', $range = 4)
        wp_enqueue_script( 'bootstrap-js' );
    }
 
+
+
    /** Add a category filter to images */
    function olab_add_image_category_filter() {
     $screen = get_current_screen();
@@ -120,6 +122,7 @@ add_action( 'init', 'register_my_menu' );
 add_action( 'restrict_manage_posts', 'olab_add_image_category_filter' );
 
 add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
+
 add_theme_support( 'post-thumbnails' ); 
 add_action( 'init' , 'wptp_add_categories_to_attachments' );
 add_action( 'init' , 'wptp_add_tags_to_attachments' );
