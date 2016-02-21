@@ -69,6 +69,18 @@
 
 					}
 
+
+					if(is_page())
+					{
+
+						global $post;
+						$page = $post;
+						$p_title = $page->post_title;
+						$is_active = $menu_item->title == $p_title ?  "active" :"";
+
+
+					}
+
 						?> 
 
 						<li class="<?php echo $is_active; ?>" ><a href="<?php echo $url; ?>"><?php echo $title; ?></a></li>
