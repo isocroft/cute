@@ -4,8 +4,23 @@
 
 
 
+// if (!current_user_can('administrator')) :
+//   show_admin_bar(false);
+// endif;
+
+ 
+
+if(is_user_logged_in()):
+  //print_r("YES"); 
 
 
+if (current_user_can('administrator')) {
+  show_admin_bar(true);
+ //print_r("YES ADMIN"); 
+ //die;
+}
+
+endif;
 
 function pagination($pages = '', $range = 4)
 {  
