@@ -10,7 +10,7 @@
 				if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 
-				<a href="<?php the_permalink(); ?>"><p><?php the_title(); ?> <span class="ash"><?php comments_number('0','-','%'); ?></span></p></a>
+				<a href="<?php the_permalink(); ?>"><p class="nopadp"><?php the_title(); ?> <span class="ash"><?php comments_number('0','-','%'); ?></span></p></a>
 
 			<?php endwhile; endif;?>
 

@@ -21,6 +21,7 @@ p{
 	font-size: 15px;
 	font-weight: normal;
 	padding :10px;
+	line-height: 2;
 }
 
 a {
@@ -497,9 +498,14 @@ input[type=submit] {
 	font-size: 15px;
 	font-family: 'Open Sans','Helvetica Neue';
 	color:#000;
+	line-height: 1;
+	padding: 2px;
 
 }
 
+.nopadp {
+	padding :0px;
+}
 
 
 .footer .navbar-form {

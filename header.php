@@ -68,10 +68,25 @@
 
 					if(!$cat_id && !is_front_page())
 						{
+							$cat_arr = array();
 							$categories = get_the_category();
+							if($categories){
 
-							$category_name = $categories[0]->cat_name;
-						$is_active = $category_name == $title ? "active" :"";
+								foreach ( $categories as $cat) {
+									# code...
+							//$category_name = $categories[0]->cat_name;
+							$category_name = $cat->cat_name;
+							array_push($cat_arr, $category_name);
+
+						}
+
+						$is_active = in_array($title, $cat_arr) ? "active" :"";
+
+					
+
+
+
+					}
 
 
 					}
