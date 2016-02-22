@@ -50,8 +50,15 @@
 
 					foreach ($menu as $menu_item) {
 						$category = get_category( get_query_var( 'cat' ) );
+
+						$category_name = false;
+						$cat_id = false;
+
+						if(isset($category->cat_ID)){
 						$cat_id = $category->cat_ID;
 						$category_name = $category->cat_name;
+					    }
+
 						$url = $menu_item->url;
 						$title = $menu_item->title;
 						$home = get_site_url().'/';

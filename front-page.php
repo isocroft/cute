@@ -188,7 +188,10 @@ $avatar = get_avatar_url($mail);
 
 
 								<?php if (function_exists("pagination")) {
+
+									if(isset($additional_loop->max_num_pages))
 									pagination($additional_loop->max_num_pages);
+
 								} ?>
 
 

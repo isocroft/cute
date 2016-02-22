@@ -74,7 +74,7 @@
 
 							<img src="<?php  echo $r = get_avatar_url( get_the_author_meta( 'ID' )); ?>" class="img-responsive profileimgtwo">
 
-							<p class="nom"><?php the_author_firstname(); echo' '; the_author_lastname(); ?>
+							<p class="nom"><?php the_author_meta('first_name'); echo' '; the_author_meta('last_name'); ?>
 							</p><p class="nom">
 
 
@@ -215,7 +215,9 @@
 							<div class="row">
 								<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs left-bar">
 								</div>
-								<?php comments_template( '/short-comments.php' ); ?>
+								<div class="col-lg-6 col-md-5 col-sm-6 col-xs-10">
+								<?php comments_template( '/comments.php' ); ?>
+								</div>
 
 							</div>
 

@@ -11,16 +11,23 @@
  
 
 if(is_user_logged_in()):
-  //print_r("YES"); 
 
-
-if (!current_user_can('manage_options')) {
+if (!current_user_can('manage_options ')) {
   show_admin_bar(false);
- //print_r("YES ADMIN"); 
- //die;
+ 
+}
+endif;
+
+
+
+
+function xtreme_enqueue_comments_reply() {
+  if( get_option( 'thread_comments' ) )  {
+    wp_enqueue_script( 'comment-reply' );
+  }
 }
 
-endif;
+
 
 function pagination($pages = '', $range = 4)
 {  
@@ -141,6 +148,7 @@ add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
 add_theme_support( 'post-thumbnails' ); 
 add_action( 'init' , 'wptp_add_categories_to_attachments' );
 add_action( 'init' , 'wptp_add_tags_to_attachments' );
+add_action( 'comment_form_before', 'xtreme_enqueue_comments_reply' );
 
 
 

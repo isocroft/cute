@@ -20,6 +20,7 @@ p{
 	font-family: 'Open Sans','Helvetica Neue';
 	font-size: 15px;
 	font-weight: normal;
+	padding :10px;
 }
 
 a {
@@ -425,9 +426,13 @@ cite {
 }
 
 .commentlist{
-margin-left: 25%;
-width: 50%;
+width: 100%;
 
+
+}
+
+ol{
+	list-style: none;
 }
 
 .depth-1{
@@ -459,7 +464,7 @@ width: 50%;
 }
 
 #respond{
-	margin-left: 25%;
+	
 	padding-left:60px; 
 }
 
@@ -976,13 +981,13 @@ blockquote{
 	margin-left :20%;/*
 	border-left:3px dashed #c1c1c1;
 	border-right:3px dashed #c1c1c1;*/
-	background: #eee;
 
 	border-left:3px solid #eee;
 	border-right:3px solid #eee;
 	margin-top:5px;
 	font-size: 23px; 
 	font-style: italic;
+	color: #777;
 
 
 }
