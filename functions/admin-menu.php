@@ -25,7 +25,7 @@ function theme_settings_page()
 
 function add_theme_menu_item()
 {
-    add_menu_page("Theme Settings", "Theme Settings", "manage_options", "theme-settings", "theme_settings_page", null, 99);
+   add_theme_page("Theme Settings", "Theme Settings", "manage_options", "theme-settings", "theme_settings_page", null, 99);
 }
 
 add_action("admin_menu", "add_theme_menu_item");
