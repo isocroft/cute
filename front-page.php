@@ -182,9 +182,9 @@ $avatar = get_avatar_url($mail);
 
 
 						<div class="row">
-							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+							<div class="col-lg-4 col-md-5 col-sm-3 col-xs-2">
 							</div>
-							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pagination-row">
+							<div class="col-lg-4 col-md-5 col-sm-6 col-xs-8 pagination-row">
 
 
 								<?php if (function_exists("pagination")) {
@@ -194,7 +194,7 @@ $avatar = get_avatar_url($mail);
 
 
 							</div>
-							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+							<div class="col-lg-4 col-md-2 col-sm-3 col-xs-2">
 							</div>
 
 

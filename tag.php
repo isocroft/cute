@@ -5,6 +5,8 @@ $tag_id = get_query_var('tag_id');
 
 $tag = get_term($tag_id);
 $taxonomy = $tag->taxonomy;
+$tag_name = $tag->name;
+
 
 
 
@@ -95,7 +97,7 @@ $posts_array = get_posts( $args );
 
 										?>
 
-								<p class="p-category">-- <?php echo $category_name;?> --</p>
+								<p class="p-category">-- <?php echo $tag_name;?> --</p>
 								<h1 class="p-title"><?php the_title(); ?></h1>
 								<p class="p-preview">
 									<?php $content = get_the_content();
