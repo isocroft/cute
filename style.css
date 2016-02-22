@@ -16,13 +16,7 @@ body{
 
 }
 
-p{
-	font-family: 'Open Sans','Helvetica Neue';
-	font-size: 15px;
-	font-weight: normal;
-	padding :10px;
-	line-height: 2;
-}
+
 
 a {
 	text-decoration: none;
@@ -218,6 +212,8 @@ a:active{
 	font-weight: bold;
 	color: #000;
 	padding-left: 40px;
+	padding-bottom: 0px;
+	line-height: 0;
 
 }
 
@@ -264,6 +260,16 @@ a:active{
 	
 
 
+}
+
+
+
+p{
+	font-family: 'Open Sans','Helvetica Neue';
+	font-size: 15px;
+	font-weight: normal;
+	padding :10px;
+	line-height: 2;
 }
 
 
