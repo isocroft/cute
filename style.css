@@ -603,7 +603,7 @@ p > .ash
 
 }
 
-p.body{
+div.body{
 	display: block;
 	font-family: Helvetica,'Helvetica Neue';
 	font-size: 18px;
@@ -627,7 +627,7 @@ p.body{
 
 
 
-p.body:first-letter {
+div.body:first-letter {
 	text-transform: uppercase;
 	font-family: Helvetica,'Helvetica Neue';
 	font-size: 40px;
@@ -636,7 +636,7 @@ p.body:first-letter {
 }
 
 
-p.body:first-line {
+div.body:first-line {
 	line-height: 1.6;
 	
 
@@ -998,19 +998,41 @@ img.alignnone{
 /*blockquote in post*/
 
 blockquote{
-	margin-right :20%;
-	margin-left :20%;/*
-	border-left:3px dashed #c1c1c1;
-	border-right:3px dashed #c1c1c1;*/
-
-	border-left:3px solid #eee;
-	border-right:3px solid #eee;
-	margin-top:5px;
-	font-size: 23px; 
-	font-style: italic;
+background: #f9f9f9;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  border: none;
+	margin-top:0px;
+	font-size: 20px; 
 	color: #777;
+	margin-left:20%;
+	margin-right:20%;
 
 
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+  padding-left: 5px; 
+}
+
+blockquote p {
+  display: inline;
 }
 
 

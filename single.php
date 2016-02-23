@@ -21,14 +21,14 @@
 
 					<?php }?>
 
-					<p class="body">
+					<div class="body">
 
 						<?php $c = get_the_content();
 
 						echo $c;
 						?>
 
-					</p>
+					</div>
 
 
 				</div>
