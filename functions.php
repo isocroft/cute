@@ -2,6 +2,13 @@
 
  require_once(TEMPLATEPATH . '/functions/admin-menu.php'); 
 
+if(is_user_logged_in()):
+
+if (!current_user_can('manage_options ')) {
+  show_admin_bar(false);
+ 
+}
+endif;
 
 
 
@@ -21,13 +28,6 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
 
 <?php 
 
-if(is_user_logged_in()):
-
-if (!current_user_can('manage_options ')) {
-  show_admin_bar(false);
- 
-}
-endif;
 
 
 

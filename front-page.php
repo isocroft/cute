@@ -26,8 +26,7 @@ $avatar = get_avatar_url($mail);
 				<?php		
 				$args = array(
 					'posts_per_page' => 1,
-					'post__in'  => get_option( 'sticky_posts' ),
-					'ignore_sticky_posts' => 1
+					'post__in'  => get_option( 'sticky_posts' )
 					);
 				$query = new WP_Query( $args ); 
 
