@@ -709,6 +709,19 @@ margin-left:30px;
 	height:100px;
 }
 
+.square {
+	width: 75px;
+	height: 71px;
+	color: #fff;
+	background: #000;
+	text-transform: uppercase;
+	padding:20px;
+	float: left;
+	margin-right: 20px;
+
+}
+
+
 .circle
 {
 width:100px;
@@ -819,7 +832,7 @@ background:#000;
 
 .result > a:hover
 {
-	font-weight: lighter;
+	font-weight: normal;
 	text-decoration: none;
 }
 
@@ -1070,7 +1083,7 @@ blockquote p {
 	100% { -webkit-transform: scale(1); }
 }
 
-.post img:hover,.thumb-more:hover,.result:hover
+.post img:hover,.thumb-more:hover,.result img:hover, .result .square:hover
 {
 -webkit-transform: scale(0.9);
 -ms-transform: scale(0.9);
