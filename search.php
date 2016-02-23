@@ -113,6 +113,8 @@ get_header();
 			<div class="col-lg-1 col-md-2 hidden-sm hidden-xs"></div>
 
 		</div>
+
+		
 		
 
 	</div>
