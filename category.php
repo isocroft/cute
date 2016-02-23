@@ -93,7 +93,7 @@ $posts_array = get_posts( $args );
 								<p class="p-category">-- <?php echo $category_name;?> --</p>
 								<h1 class="p-title"><?php the_title(); ?></h1>
 								<p class="p-preview">
-									<?php $content = get_the_content();
+									<?php $content = get_the_excerpt();
 												if ( has_post_thumbnail($post))
 													$content = substr($content, 0,60);
 												else

@@ -50,7 +50,7 @@ $avatar = get_avatar_url($mail);
 
 
 							<p class="headertext"><?php the_title(); ?></p>
-							<p> <?php $content = get_the_content();
+							<p> <?php $content = get_the_excerpt();
 								echo $content = substr($content, 0,100); ?>
 								...</p>
 								<a href="<?php the_permalink(); ?>" class="btn btn-sq-lg btn-primary whiteonblack">
@@ -132,12 +132,12 @@ $avatar = get_avatar_url($mail);
 
 
 												<p class="p-preview">
-													<?php $content = get_the_content();
+													<?php $content = get_the_excerpt();
 													if ( has_post_thumbnail($post))
 														$content = substr($content, 0,60);
 													else
 														$content = substr($content, 0,400);
-													echo $content; ?>...</p>
+													echo $content; ?></p>
 													<?php if (!has_post_thumbnail($post)): ?>
 														<a href="<?php the_permalink(); ?>" class="btn btn-sq-lg btn-primary whiteonblack">
 															READ NOW
