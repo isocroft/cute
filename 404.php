@@ -37,26 +37,21 @@ get_header();
 			<img src="<?php echo $img; ?>" class="img-responsive">
 			<br>
 
-			<?php if($no_result){ ?><p align='center'>Uh oh! The Page You Are Looking For Does Not Exist!</p>
-			<p align='center'>Maybe you should search for it below:</p>
+			<?php if($no_result){ ?><p align='center'>Uh oh! I couldn't find that Page!</p>
+			<p align='center'>Do you want to search for something else? </p>
 			<br>
 			<div align='center'>			
 				<form class="navbar-form big-form" role="search" action="<?php echo home_url( '/' ); ?>" method="get">
 					<div class="input-group">
 						<input type="text" class="form-control" placeholder="Try searching for something else" name="s" id="search" value="<?php the_search_query(); ?>">
 						<span class="input-group-btn">
-							<button class="btn btn-primary whiteonblack" type="submit">Go!</button>
+							<button class="btn btn-primary 404btn" type="submit">Go!</button>
 						</span>
 					</div>
 				</form>
 			</div>
 
-			<div align='center'>
-
-				<h3>Side Note: I found some unrelated hot stuff though. You might like these:</h3>
-
-
-			</div>
+		
 
 
 
@@ -71,31 +66,96 @@ get_header();
 
 	</div>
 
-	<div class="row" style="background:red;">
-	<div class="col-lg-2" style="background:blue;"></div>
+	<div class="row" >
+	<div class="col-lg-2"></div>
 	<div class="recents">
-	
-			
-					<?php $recent_posts = wp_get_recent_posts(array("numberposts"=>3));
-					foreach( $recent_posts as $recent ){ ?>
+		<div align='center'>
 
-						<div class="col-lg-3"> <?php
-						if($recent['post_status']=="publish"){
-							if ( has_post_thumbnail($recent["ID"])) { ?>
-								
-								<a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' .   get_the_post_thumbnail($recent["ID"], 'thumbnail'). $recent["post_title"].'</a></li> ';
-							<?php  } else{
-								
+				<h3>On the side, I found hot stuff you might like:</h3>
+
+
+			</div>
+
+
+						<div class="row thumb-more-row">
+							<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+							</div>
+
+
+
+							<?php
+							$args = array( 'numberposts' => '3');
+							$recent_posts = wp_get_recent_posts( $args );
+							foreach( $recent_posts as $recent ){ 
+								setup_postdata($recent); 
+
 
 								?>
-								<a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a></li> ';
-							<?php }
-						} ?>
+
+
+								<div class="col-lg-2 col-md-2 col-sm-2  hidden-xs thumb-more <?php if (!has_post_thumbnail($recent['ID']) ){ echo 'pad-little';
+							} ?> ">
+							<a href="<?php echo get_permalink($recent["ID"]); ?>">
+
+								<?php if ( has_post_thumbnail($recent['ID']) ) {
+
+
+									$url = wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) ); 
+									?>
+
+
+
+
+
+
+
+									<img src="<?php echo $url; ?>" longdesc="<?php the_title(); ?>" alt="<?php the_title(); ?>" class="img-responsive img-circle" />
+
+									<?php }
+									?>
+
+									<?php if (!has_post_thumbnail($recent['ID']) ) { 
+										$sub_title = "";
+										$title = $recent["post_title"];
+										$title_array = explode(" ", $title);
+
+										foreach ($title_array as $value) {
+											$sub_title .= substr($value, 0,1);
+
+										}
+										$sub_title = substr($sub_title, 0,4);
+
+
+
+
+										?>
+
+										<div class="circle"><?php echo $sub_title; ?> </div>
+
+
+										<?php } ?>
+
+
+
+
+
+										<p><?php echo $recent["post_title"]; ?></p>
+
+
+
+									</a>
+
+								</div>
+								<?php }
+
+								?>
+
+
+
 
 							</div>
 
-					<?php }
-					?>
+
 				</div>
 				</div>
 
@@ -107,7 +167,6 @@ get_header();
 	<?php } ?>
 
 
-</div>
 
 
 

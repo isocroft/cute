@@ -765,7 +765,7 @@ background:#000;
 
 
 .search {
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 .search img {
@@ -958,7 +958,22 @@ img.alignnone{
 
 .big-form.navbar-form .input-group > .form-control{
 	width:500px;
-	height:60%;
+	height:50px;
+
+	
+	
+}
+
+input.form-control{
+	height: 50px;
+}
+
+.input-group-btn:last-child > .btn{
+	background-color: #000;
+	height:50px;
+	background: #000;
+	color: #fff;
+
 	
 	
 }
