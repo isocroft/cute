@@ -217,6 +217,11 @@ a:active{
 
 }
 
+.navbar{
+	opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
 
 
 .navbar-default .navbar-nav>li{
