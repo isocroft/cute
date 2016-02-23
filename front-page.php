@@ -2,7 +2,7 @@
 
 get_header();
 
-$mail = get_option( 'admin-email') ;
+$mail = get_option( 'admin_email') ;
 $avatar = get_avatar_url($mail);
 
 ?>
