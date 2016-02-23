@@ -4,7 +4,7 @@
 
 if(is_user_logged_in()):
 
-if (!current_user_can('manage_options ')) {
+if (!current_user_can('manage_options')) {
   show_admin_bar(false);
  
 }
