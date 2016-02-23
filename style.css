@@ -208,7 +208,7 @@ a:active{
 
 .navbar-brand > p {
 	font-family: Impact;
-	font-size: 48px;
+	font-size: 40px;
 	font-weight: bold;
 	color: #000;
 	padding-left: 40px;
@@ -241,7 +241,7 @@ a:active{
 	padding-left: 25px;
 	font-family:Helvetica,'Helvetica Neue';
 	font-weight:lighter;
-	font-size: 17px;
+	font-size: 14px;
 
 
 }
@@ -271,7 +271,7 @@ a:active{
 
 p{
 	font-family: Helvetica,'Helvetica Neue';
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: lighter;
 	padding :10px;
 	line-height: 2;
@@ -426,7 +426,7 @@ cite {
 
 	font-weight: lighter;
 	font-family: Helvetica,'Helvetica Neue', Helvetica,'Helvetica Neue';
-	font-size: 18px;
+	font-size: 14px;
 	font-style: lighter;
 }
 
@@ -464,11 +464,13 @@ ol{
 	border-radius: 5px;
 }
 
-
+h3#comments{
+	margin:70px;
+}
 .comment-author{
 	font-weight: lighter;
-	font-family: Helvetica,'Helvetica Neue', Helvetica,'Helvetica Neue';
-	font-size: 18px;
+	font-family: Helvetica,'Helvetica Neue';
+	font-size: 14px;
 	font-style: lighter;
 }
 
@@ -606,12 +608,16 @@ p > .ash
 div.body{
 	display: block;
 	font-family: Helvetica,'Helvetica Neue';
-	font-size: 18px;
+	font-size: 15px;
 	line-height: 1.8;
 	text-align: justify;
 	padding: 20px;
 	word-spacing: 2px;
 
+}
+
+.body p {
+	padding-bottom: 10px;
 }
 
 .content {
@@ -627,21 +633,29 @@ div.body{
 
 
 
-div.body:first-letter {
+div.body > p:first-letter {
 	text-transform: uppercase;
 	font-family: Helvetica,'Helvetica Neue';
-	font-size: 40px;
-	font-weight: lighter;
+	font-size: 19px;
+	font-weight: bold;
 	margin: 0px;
 }
 
 
+div.body h1{
+	font-size: 36px;
+	font-family: 'Myriad pro','Droid Sans';
+}
+
+div.body a {
+	color: red;
+}
+
+
+
+
 div.body:first-line {
 	line-height: 1.6;
-	
-
-
-
 }
 
 hr{
