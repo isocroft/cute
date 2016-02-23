@@ -645,6 +645,11 @@ div.body > p:first-letter {
 	margin: 0px;
 }
 
+div.body > p
+{
+	line-height: 2;
+	font-size: 15px;
+}
 
 div.body h1{
 	font-size: 36px;
@@ -652,6 +657,10 @@ div.body h1{
 }
 
 div.body a {
+	color: red;
+}
+
+.content a {
 	color: red;
 }
 
