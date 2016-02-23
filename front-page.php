@@ -14,7 +14,7 @@ $avatar = get_avatar_url($mail);
 			<?php if($avatar){ ?>
 			<img src="<?php echo $avatar; ?>" class="img-circle img-responsive profileimg">
 			<?php } ?>
-			<p>
+			<p class="nopadp">
 				<?php $bloginfo = get_bloginfo( 'description');
 				echo $bloginfo;
 				?> </p>
