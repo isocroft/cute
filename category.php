@@ -131,8 +131,7 @@ $posts_array = get_posts( $args );
 				
 								<?php if (function_exists("pagination")) {
 
-									if(isset($additional_loop->max_num_pages))
-									pagination($additional_loop->max_num_pages);
+									@pagination($additional_loop->max_num_pages);
 								} ?>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
