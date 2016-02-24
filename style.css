@@ -462,6 +462,7 @@ cite {
 
 ol{
 	list-style: none;
+	padding-left: 0px;
 }
 
 .depth-1{
@@ -632,6 +633,10 @@ div.body{
 	line-height: 2;
 
 
+}
+
+div.body strong {
+	padding :10px;
 }
 
 .body p {
@@ -998,7 +1003,7 @@ hr{
 
 
 	#wpadminbar{
-		margin-top:55px;
+		margin-top:50px;
 	}
 
 
