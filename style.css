@@ -63,6 +63,10 @@ a.blackonwhite
 	margin-left: 20%;
 }
 
+.jumbotron {
+	background: #fff;
+}
+
 
 .jumbotron > p {
 	color:white;
