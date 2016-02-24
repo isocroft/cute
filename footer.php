@@ -1,10 +1,10 @@
 <footer class="footer">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"> 
+			<div class="col-lg-3 col-md-3 col-sm-1 hidden-xs"> 
 			</div>
 
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> <p>POPULAR ON MY BLOG</p>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6"> <p>POPULAR ON MY BLOG</p>
 
 				<?php query_posts(array('orderby' => 'comment_count', 'posts_per_page' => '4'));
 				if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -29,7 +29,7 @@
 
 		</div>
 
-		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+		<div class="col-lg-4 col-md-4 col-sm-5 col-xs-6">
 			<?php get_search_form(); ?>
 
 			<p>TAG CLOUD</p>

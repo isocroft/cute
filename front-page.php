@@ -10,18 +10,18 @@ $avatar = get_avatar_url($mail);
 
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-lg-2 col-md-2 col-sm-3 hidden-xs pad-little">
+		<div class="col-lg-2 col-md-2 col-sm-1 hidden-xs pad-little">
 			<?php if($avatar){ ?>
 			<img src="<?php echo $avatar; ?>" class="img-circle img-responsive profileimg">
 			<?php } ?>
-			<p class="nopadp">
+			<p class="nopadp toggle">
 				<?php $bloginfo = get_bloginfo( 'description');
 				echo $bloginfo;
 				?> </p>
 			</div>
 
 
-			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+			<div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
 
 				<?php		
 				$args = array(

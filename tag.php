@@ -160,8 +160,3 @@ $posts_array = get_posts( $args );
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
-
-
-
-
-

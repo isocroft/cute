@@ -3,10 +3,10 @@
 <div class="container-fluid">
 	<div class="row pad-more">
 
-		<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs left-bar">
+		<div class="col-lg-3 col-md-3 col-sm-1 hidden-xs left-bar">
 		</div>
 		
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 content">
+		<div class="col-lg-6 col-md-6 col-sm-10 col-xs-12 content">
 			<?php if (have_posts()) : ?><?php while (have_posts()) : the_post(); ?>
 				<?php $pid = get_the_ID(); ?>
 
@@ -35,14 +35,14 @@
 
 			<?php endwhile; ?>
 		<?php endif; ?>
-		<div class="col-lg-1 col-md-2 hidden-sm hidden-xs"></div>
+		<div class="col-lg-1 col-md-2 col-sm-1 hidden-xs"></div>
 
 	</div>
 
 	<div class="row prev-next-links">
-		<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs left-bar">
+		<div class="col-lg-3 col-md-3 col-sm-1 hidden-xs left-bar">
 		</div>
-		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 prev">
+		<div class="col-lg-3 col-md-3 col-sm-10 col-xs-10 prev">
 			<p>
 							<!-- <a href="">
 

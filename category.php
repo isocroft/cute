@@ -53,10 +53,10 @@ $posts_array = get_posts( $args );
 
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-lg-2 col-md-2 col-sm-3 hidden-xs">
+			<div class="col-lg-2 col-md-2 col-sm-1 hidden-xs">
 				
 			</div>
-			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 remove-jumbotron-padding">
+			<div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 remove-jumbotron-padding">
 				<div class="jumbotron text-center <?php if(!$img_url){ ?> category-header-no-img <?php } else {  ?> category-header <?php } ?>">
 					<img src="<?php echo $img_url; ?>" class="img-responsive">
 
@@ -153,8 +153,3 @@ $posts_array = get_posts( $args );
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
-
-
-
-
-

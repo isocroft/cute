@@ -15,27 +15,22 @@ $url = get_bloginfo('template_url').'/media/images/traintrack.jpg';
 ?>
 
 <div class="container-fluid">
-<div class="row">
+<div class="row remove-pad">
 	
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 page-header">
 		
 <img src="<?php echo $url;?>">
-<div class="effect-over">
-	
-</div>
+
+
+<a href="#" class="btn btn-sq-lg btn-primary whiteonblack">
+						<?php echo $title; ?>
+					</a>
+
 	</div>
 
 
 </div>
-<div class="row hold-header-text">
-	
-	<div class="col-lg-3 col-sm-3 col-md-3 col-xs-3"></div>
-	<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
-<p class="page-header-heading"><?php echo $title; ?></p>
-</div>
 
-		<div class="col-lg-1 col-md-2 hidden-sm hidden-xs"></div>
-</div>
 
 
 <div class="row">
