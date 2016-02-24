@@ -42,7 +42,7 @@
 	<div class="row prev-next-links">
 		<div class="col-lg-3 col-md-3 col-sm-1 hidden-xs left-bar">
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-10 col-xs-10 prev">
+		<div class="col-lg-6 col-md-6 col-sm-5 col-xs-6 prev">
 			<p>
 							<!-- <a href="">
 
@@ -54,7 +54,7 @@
 							<?php } ?>
 
 						</p></div>
-						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 next"><p>
+						<div class="col-lg-3 col-md-3 col-sm-5 col-xs-6 next"><p>
 							<?php if(get_adjacent_post(true, '', false)) { ?>
 							<?php next_post_link(); ?>
 
