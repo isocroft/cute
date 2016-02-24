@@ -27,11 +27,11 @@ get_header();
 
 <div class="container-fluid">
 	<div class="row pad-more">
-		<div class="col-lg-2 col-md-2 col-sm-3 hidden-xs left-bar">
+		<div class="col-lg-1 col-md-1 col-sm-1 hidden-xs left-bar">
 
 
 		</div>
-		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 search">
+		<div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 search">
 
 
 			<img src="<?php echo $img; ?>" class="img-responsive">
@@ -49,6 +49,11 @@ get_header();
 						</span>
 					</div>
 				</form>
+
+				<h3>On the side, I found hot stuff you might like:</h3>
+
+
+			
 			</div>
 
 		
@@ -62,29 +67,23 @@ get_header();
 
 		</div>
 
-		<div class="col-lg-1 col-md-2 hidden-sm hidden-xs"></div>
+		<div class="col-lg-1 col-md-1 hidden-sm hidden-xs"></div>
 
 	</div>
 
 	<div class="row" >
-	<div class="col-lg-2"></div>
 	<div class="recents">
-		<div align='center'>
-
-				<h3>On the side, I found hot stuff you might like:</h3>
-
-
-			</div>
+		
 
 
 						<div class="row thumb-more-row">
-							<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+							<div class="col-lg-2 col-md-1 col-sm-1 hidden-xs">
 							</div>
 
 
 
 							<?php
-							$args = array( 'numberposts' => '3');
+							$args = array( 'numberposts' => '3', 'post_status' => 'publish');
 							$recent_posts = wp_get_recent_posts( $args );
 							foreach( $recent_posts as $recent ){ 
 								setup_postdata($recent); 

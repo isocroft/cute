@@ -35,11 +35,11 @@ get_header();
 
 <div class="container-fluid">
 	<div class="row pad-more">
-		<div class="col-lg-2 col-md-2 col-sm-3 hidden-xs left-bar">
+		<div class="col-lg-2 col-md-2 col-sm-1 hidden-xs left-bar">
 
 
 		</div>
-		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 search">
+		<div class="col-lg-8 col-md-6 col-sm-10 col-xs-12 search">
 
 
 			<img src="<?php echo $img; ?>" class="img-responsive">
@@ -110,7 +110,7 @@ get_header();
 
 			</div>
 
-			<div class="col-lg-1 col-md-2 hidden-sm hidden-xs"></div>
+			<div class="col-lg-1 col-md-3 hidden-sm hidden-xs"></div>
 
 		</div>
 
