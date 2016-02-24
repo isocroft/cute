@@ -42,7 +42,7 @@
 	<div class="row prev-next-links">
 		<div class="col-lg-3 col-md-3 col-sm-1 hidden-xs left-bar">
 		</div>
-		<div class="col-lg-3 col-md-3 col-sm-10 col-xs-10 prev">
+		<div class="col-lg-6 col-md-6 col-sm-10 col-xs-10 prev">
 			<p>
 							<!-- <a href="">
 
@@ -70,7 +70,7 @@
 					<div class="row meta-post">
 						<div class="col-lg-3 col-md-3 col-sm-1 hidden-xs ">
 						</div>
-						<div class="col-lg-5 col-md-5 col-sm-10 col-xs-10 post-meta">
+						<div class="col-lg-6 col-md-6 col-sm-8 col-xs-10 post-meta">
 
 							<img src="<?php  echo $r = get_avatar_url( get_the_author_meta( 'ID' )); ?>" class="img-responsive profileimgtwo">
 
@@ -126,16 +126,16 @@
 						
 
 						<div class="row before-thumb-more-row">
-							<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs left-bar">
+							<div class="col-lg-3 col-md-3 col-sm-1 hidden-xs left-bar">
 							</div>
 
-							<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+							<div class="col-lg-3 col-md-3 col-sm-10 hidden-xs">
 							<h4>You Might Like These: </h4>
 							</div>
 						</div>
 
 						<div class="row thumb-more-row">
-							<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+							<div class="col-lg-3 col-md-3 col-sm-1 hidden-xs">
 							</div>
 
 

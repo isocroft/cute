@@ -218,8 +218,8 @@ a.blackonwhite
 }
 
 .navbar-brand > p {
-	font-family: Impact;
-	font-size: 40px;
+	font-family: Impact,Anton;
+	font-size: 36px;
 	font-weight: bold;
 	color: #000;
 	padding-left: 40px;
@@ -237,7 +237,7 @@ a.blackonwhite
 
 .navbar-default .navbar-nav>li{
 	
-	margin-top: 15px;
+	margin-top: 8px;
 	/*margin-bottom: 15px;*/
 	margin-right: 3px;
 	margin-left: 3px;
@@ -246,7 +246,7 @@ a.blackonwhite
 
 .navbar-default .navbar-nav>li>a {
 	color: #000;
-	padding-top: 2px;
+	padding-top: 0px;
 	padding-right :25px;
 	/*padding-bottom: 5px;*/
 	padding-left: 25px;
