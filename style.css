@@ -600,9 +600,9 @@ p > .ash
 	font-size: 33px;
 	font-family: 'Myriad pro','Droid Sans';
 	font-weight: bold;
-	padding: 20px;
 	text-transform: uppercase;
-	text-align: left; 
+	text-align: left;
+	line-height: 1; 
 	
 }
 
