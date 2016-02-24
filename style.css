@@ -56,6 +56,13 @@ a:active{
 	color: #fff;
 }
 
+a.blackonwhite
+{
+	background: #000;
+	color: #fff;
+	margin-left: 20%;
+}
+
 
 .jumbotron > p {
 	color:white;
@@ -97,10 +104,14 @@ a:active{
 
 }
 
+div.jumbotron.text-center{
+	padding: 0px;
+	background:transparent; 
+}
+
 .category-header {
 	padding: 0px;
 	background:#fff;
-	
 }
 
 .category-header-no-img {
@@ -899,22 +910,25 @@ hr{
 
 
 
+
+
 	.page-header{
-		opacity:1;
 		padding:0px;
-		width: 100%;
-		height:450px;
-		border:none;
-		margin-bottom: -20%;
+		margin: 0px;
+		border: none;
+
 
 	}
 
-	.remove-pad{
-		background: red;
-		margin-top: -20%;
-	}
+	.container .jumbotron, .container-fluid .jumbotron {
+    padding-right: 0px;
+    padding-left: 0px;
+}
 
-	.page-header .btn-primary{
+
+
+
+	.page-header .btn-primary, .page-header .btn-primary:visited, .page-header .btn-primary:hover{
 		margin-top: -40px;
 		padding:2px;
 		padding-left: 15px;
@@ -922,11 +936,12 @@ hr{
 		font-family: 'Myriad pro','Droid Sans';
 		font-size: 30px;
 		font-weight: lighter;
-		background: #fff;
-		color: #000;
+		background: #000;
+		color: #fff;
 		border: 1px solid #000;
 		text-transform: uppercase;
-		margin-left: 40%;
+		margin-left: -5%;
+		cursor:default;
 
 	}
 

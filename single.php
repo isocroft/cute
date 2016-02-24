@@ -213,9 +213,9 @@
 							</div>
 
 							<div class="row">
-								<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs left-bar">
+								<div class="col-lg-3 col-md-3 col-sm-1 hidden-xs left-bar">
 								</div>
-								<div class="col-lg-6 col-md-5 col-sm-6 col-xs-10">
+								<div class="col-lg-6 col-md-5 col-sm-10 col-xs-10">
 								<?php comments_template( '/comments.php' ); ?>
 								</div>
 
