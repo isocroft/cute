@@ -130,7 +130,7 @@
 							</div>
 
 							<div class="col-lg-4 col-md-4 col-sm-10 hidden-xs">
-							<h4>You Might Like These: </h4>
+							<h4>   You Might Like These: </h4>
 							</div>
 						</div>
 

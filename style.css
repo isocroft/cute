@@ -497,7 +497,7 @@ h3#comments{
 
 #respond{
 	
-	padding-left:60px; 
+	padding-left:10px; 
 }
 
 textarea#comment {
@@ -522,6 +522,7 @@ input[type=submit] {
 	margin-top:70px; 
 	padding: 10px;
 	background: #f2f2f2;
+	padding-left: 30px;
 }
 
 .footer > p {
@@ -536,6 +537,10 @@ input[type=submit] {
 
 .nopadp {
 	padding :0px;
+}
+
+.padleft10{
+	padding-left: 20px;
 }
 
 
