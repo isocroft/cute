@@ -1521,7 +1521,7 @@ hr{
 
 	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
 		margin-right: 0px;
-		margin-left: 0;
+		margin-left: 0px;
 	}
 
 	.navbar-default .navbar-nav>li>a {
@@ -1547,7 +1547,7 @@ hr{
 
 
 	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
-		margin-right: -35px;
+		margin-right: -5px;
 		margin-left: 0;
 	}
 }
