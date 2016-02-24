@@ -3,10 +3,10 @@
 <div class="container-fluid">
 	<div class="row pad-more">
 
-		<div class="col-lg-3 col-md-3 col-sm-1 hidden-xs left-bar">
+		<div class="col-lg-2 col-md-2 col-sm-1 hidden-xs left-bar">
 		</div>
 		
-		<div class="col-lg-6 col-md-6 col-sm-10 col-xs-12 content">
+		<div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 content">
 			<?php if (have_posts()) : ?><?php while (have_posts()) : the_post(); ?>
 				<?php $pid = get_the_ID(); ?>
 
@@ -35,14 +35,14 @@
 
 			<?php endwhile; ?>
 		<?php endif; ?>
-		<div class="col-lg-3 col-md-3 col-sm-1 hidden-xs"></div>
+		<div class="col-lg-2 col-md-2 col-sm-1 hidden-xs"></div>
 
 	</div>
 
 	<div class="row prev-next-links">
-		<div class="col-lg-3 col-md-3 col-sm-1 hidden-xs left-bar">
+		<div class="col-lg-2 col-md-2 col-sm-1 hidden-xs left-bar">
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-5 col-xs-6 prev">
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 prev">
 			<p>
 							<!-- <a href="">
 
@@ -54,7 +54,7 @@
 							<?php } ?>
 
 						</p></div>
-						<div class="col-lg-3 col-md-3 col-sm-5 col-xs-6 next"><p>
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 next"><p>
 							<?php if(get_adjacent_post(true, '', false)) { ?>
 							<?php next_post_link(); ?>
 
@@ -68,9 +68,9 @@
 
 
 					<div class="row meta-post">
-						<div class="col-lg-3 col-md-3 col-sm-1 hidden-xs ">
+						<div class="col-lg-2 col-md-2 col-sm-2 hidden-xs ">
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-8 col-xs-10 post-meta">
+						<div class="col-lg-7 col-md-7 col-sm-10 col-xs-10 post-meta">
 
 							<img src="<?php  echo $r = get_avatar_url( get_the_author_meta( 'ID' )); ?>" class="img-responsive profileimgtwo">
 
@@ -126,16 +126,16 @@
 						
 
 						<div class="row before-thumb-more-row">
-							<div class="col-lg-3 col-md-3 col-sm-1 hidden-xs left-bar">
+							<div class="col-lg-2 col-md-2 col-sm-1 hidden-xs left-bar">
 							</div>
 
-							<div class="col-lg-3 col-md-3 col-sm-10 hidden-xs">
+							<div class="col-lg-4 col-md-4 col-sm-10 hidden-xs">
 							<h4>You Might Like These: </h4>
 							</div>
 						</div>
 
 						<div class="row thumb-more-row">
-							<div class="col-lg-3 col-md-3 col-sm-1 hidden-xs">
+							<div class="col-lg-2 col-md-2 col-sm-1 hidden-xs">
 							</div>
 
 
