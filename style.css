@@ -110,6 +110,7 @@ a.blackonwhite
 	
 	background: #000;
 	color: #fff;
+	text-decoration: none;
 }
 
 
@@ -201,6 +202,7 @@ a.blackonwhite
 .category-header  > .btn-primary:visited{
 	background: #fff;
 	color: #000;
+	text-decoration: none;
 }
 
 
@@ -212,6 +214,7 @@ a.blackonwhite
 .category-header-no-img  > .btn-primary:visited{
 	background: #fff;
 	color: #000;
+	text-decoration: none;
 }
 
 .profileimg{
@@ -776,6 +779,10 @@ hr{
 		float: left;
 		width: 110px;
 		height:100px;
+	}
+
+	.thumb-more > a:visited {
+		text-decoration: none;
 	}
 
 	.square {
