@@ -251,8 +251,8 @@ a.blackonwhite
 }
 
 .navbar{
-	opacity: 1.0;
-	filter: alpha(opacity=100);
+	opacity: 0.95;
+	filter: alpha(opacity=95);
 }
 
 
