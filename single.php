@@ -143,7 +143,8 @@
 
 
 							<?php
-							$args = array( 'numberposts' => '3','post__not_in'=> array($pid), 'post_status' => 'publish');
+							$cat = $category[0]->term_id;
+							$args = array( 'numberposts' => '3','post__not_in'=> array($pid), 'cat'=>$cat, 'post_status' => 'publish');
 							$recent_posts = wp_get_recent_posts( $args );
 							foreach( $recent_posts as $recent ){ 
 								setup_postdata($recent); 
