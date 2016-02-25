@@ -8,6 +8,7 @@ Author URI: http://lynda.chiwetelu.com/
 Tags: responsive, black, sticky-post, nice, blog
 */
 
+
 @import url('media/bootstrap/css/bootstrap.css'); 
 
 body{
@@ -16,6 +17,15 @@ body{
 
 }
 
+
+embed,
+iframe,
+object,
+video {
+	margin-bottom: 1.75em;
+	max-width: 100%;
+	vertical-align: middle;
+}
 
 
 a {

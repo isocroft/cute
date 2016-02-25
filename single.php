@@ -23,9 +23,9 @@
 
 					<div class="body">
 
-						<?php $c = get_the_content();
+						<?php the_content();
 
-						echo $c;
+						
 						?>
 
 					</div>

@@ -156,9 +156,24 @@ add_action( 'restrict_manage_posts', 'olab_add_image_category_filter' );
 
 add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
 
+add_theme_support( 'title-tag' );
+
+add_theme_support( 'html5', array(
+    'search-form',
+    'comment-form',
+    'comment-list',
+    'gallery',
+    'caption',
+  ) );
+
 add_theme_support( 'post-thumbnails' ); 
 add_action( 'init' , 'wptp_add_categories_to_attachments' );
 add_action( 'init' , 'wptp_add_tags_to_attachments' );
+
+add_theme_support( 'post-formats', array(
+    'aside', 'image', 'video', 'quote', 'link', 'gallery', 'status', 'audio', 'chat'
+  ) );
+
 add_action( 'comment_form_before', 'xtreme_enqueue_comments_reply' );
 
 
