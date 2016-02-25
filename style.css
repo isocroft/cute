@@ -606,7 +606,7 @@ p > .ash
 	font-size: 33px;
 	font-family: 'Myriad pro','Droid Sans';
 	font-weight: bold;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	text-align: left;
 	line-height: 1; 
 	
@@ -1119,12 +1119,15 @@ hr{
 	blockquote{
 		background: #f9f9f9;
 		quotes: "\201C""\201D""\2018""\2019";
-		border: none;
+		border-top:5px solid #e5e5e5;
+		border-bottom:5px solid #e5e5e5;
+		border-left: none;
+		border-width: 50%;
 		margin-top:10px;
 		font-size: 15px; 
 		color: #777;
-		margin-left:20%;
-		margin-right:20%;
+		margin-left:5%;
+		margin-right:5%;
 		padding-left:20px;
 		padding-right:20px;
 
