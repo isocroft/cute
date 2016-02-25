@@ -49,10 +49,10 @@ $avatar = get_avatar_url($mail);
 
 
 
-							<p class="headertext"><?php the_title(); ?></p>
-							<p> <?php $content = get_the_excerpt();
-								echo $content = substr($content, 0,100); ?>
-								...</p>
+							<p class="headertext"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+							<p class="headerexcerpt"><a href="<?php the_permalink(); ?>"> <?php $content = get_the_excerpt();
+								echo $content = substr($content, 0,150); ?>
+								</a>...</p>
 								<a href="<?php the_permalink(); ?>" class="btn btn-sq-lg btn-primary whiteonblack">
 									READ NOW
 								</a>

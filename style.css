@@ -76,11 +76,29 @@ a.blackonwhite
 	text-align: center;
 }
 
-.jumbotron > .headertext{
+.jumbotron > .headertext a{
 	font-family: 'Myriad pro','Droid Sans';
 	font-weight: bold;
 	font-size: 40px;
 	color: white;
+}
+
+.headerexcerpt a{
+	text-align: center;
+	font-weight: normal;
+	color: white;
+	
+}
+
+.headerexcerpt a:hover {
+	font-weight: normal;
+	color: white;
+}
+
+.headerexcerpt a:visited {
+	font-weight: normal;
+	color: white;
+	text-decoration: none;
 }
 
 .jumbotron > .btn-primary{
