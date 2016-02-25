@@ -216,7 +216,7 @@
 							</div>
 
 							<div class="row">
-								<div class="col-lg-2 col-md-2 col-sm-1 hidden-xs left-bar">
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 left-bar">
 								</div>
 								<div class="col-lg-7 col-md-7 col-sm-10 col-xs-10">
 								<?php comments_template( '/comments.php' ); ?>
