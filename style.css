@@ -694,7 +694,7 @@ div.body strong {
 
 
 
-div.body > p:first-letter {
+div.body > p:first-child:first-letter{
 	text-transform: uppercase;
 	font-family: Helvetica,'Helvetica Neue';
 	font-size: 19px;
