@@ -854,7 +854,7 @@ hr{
 	}
 
 	.prev-next-links a:hover {
-		font-weight: normal;
+		font-weight: lighter;
 		color: red;
 		text-decoration: none;
 	}
