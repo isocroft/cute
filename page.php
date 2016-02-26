@@ -5,7 +5,8 @@ get_header();
 global $post;
 $page = $post;
 $title = $page->post_title;
-$content = $page->post_content;
+//$content = $page->post_content;
+$content = apply_filters('the_content', $post->post_content);
  if ( has_post_thumbnail($post) ) 
 $url = wp_get_attachment_url( get_post_thumbnail_id($page->ID) );
 else
