@@ -251,6 +251,10 @@ a.blackonwhite
 	padding-bottom: 10%;
 }
 
+.navbar-brand{
+	padding-top: 20px;
+}
+
 .navbar-brand > p {
 	font-family: Impact,Anton;
 	font-size: 36px;
