@@ -70,9 +70,9 @@
 
 
 					<div class="row meta-post">
-						<div class="col-lg-2 col-md-2 col-sm-1 hidden-xs ">
+						<div class="col-lg-2 col-md-2 col-sm-1 col-xs ">
 						</div>
-						<div class="col-lg-7 col-md-7 col-sm-8 col-xs-10 post-meta">
+						<div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 post-meta">
 
 							<img src="<?php  echo $r = get_avatar_url( get_the_author_meta( 'ID' )); ?>" class="img-responsive profileimgtwo">
 
