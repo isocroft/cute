@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php wp_title();?></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title><?php wp_title();?></title> <!-- Why do you need this since you are enabling title hadnling with 'wp-head' in functions.php ? -->
+	<?php
+       cute_metatag_data();
+	?>
 	<!-- 
 	<link rel="stylesheet" type="text/css" href="media/bootstrap/css/bootstrap.min.css">-->
 	<link href='https://fonts.googleapis.com/css?family=Droid+Sans|Anton' rel='stylesheet' type='text/css' media="screen">

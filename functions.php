@@ -122,15 +122,37 @@ function pagination($pages = '', $range = 4)
     }
 
 
-
+    if(! function_exists( 'cute_metatag_data' ) ){
+      /**
+       * Site Meta
+       */
+ 
+       function cute_metatag_data() {
+           echo '<meta http-equiv="Content-Type" content="' . bloginfo('html_type') . '; charset=' . bloginfo('charset') . '" >';
+           echo '<meta http-equiv="X-UA-Compatible" content="IE=edge" >';
+           echo '<meta name="googlebot" content="follow, index" >';
+           echo '<meta http-equiv="keywords" content="' . '-' .'" >';
+           echo '<meta http-equiv="description" content="' . '-' . '" >';
+           echo '<meta content="' . get_template_directory_uri() .  '/media/images/icons/windows-8-tile.png' . '" name="msapplication-TileImage" >';
+           echo '<meta content="#f3f4f3" name="msapplication-TileColor" >';
+           echo '<meta name="apple-mobile-web-app-capable" content="YES">';
+           echo '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
+       }
+     
+  }
 
 
     function wpbootstrap_scripts_with_jquery()
     {
 	// Register the script like this for a theme:
+       wp_register_script('cute-edetection', get_template_directory_uri() .'/media/custom/js/browsengine.js', array(), true);
+      wp_register_script('cute-application', get_template_directory_uri() .'/media/custom/js/custom.js', array(), true);
+
        wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/media/bootstrap/js/bootstrap.js', array( 'jquery' ) );
 	// For either a plugin or a theme, you can then enqueue the script:
        wp_enqueue_script( 'bootstrap-js' );
+       wp_enqueue_script('cute-edetection');
+       wp_enqueue_script('cute-application');
    }
 
 
@@ -156,7 +178,9 @@ add_action( 'restrict_manage_posts', 'olab_add_image_category_filter' );
 
 add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
 
-add_theme_support( 'title-tag' );
+  if ( version_compare( $GLOBALS['wp_version'], '4.1', '>' ) ) {
+      add_theme_support('title-tag'); /* for WordPress v4.1 */
+  }
 
 add_theme_support( 'html5', array(
     'search-form',

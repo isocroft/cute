@@ -1,7 +1,8 @@
 <footer class="footer">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-lg-2 col-md-2 col-sm-1 hidden-xs"> 
+			<div class="col-lg-1 col-md-1 col-sm-1 hidden-xs hidden-sm">  <!-- formerly: col-lg-2 col-md-2 col-sm-1 hidden-xs -->
+
 			</div>
 
 			<div class="col-lg-5 col-md-5 col-sm-6 col-xs-6"> <p>POPULAR ON MY BLOG</p>
@@ -22,7 +23,7 @@
 				<div class="input-group">
 					<input type="text" class="form-control" placeholder="Email Address" >
 					<span class="input-group-btn">
-						<button class="btn btn-primary whiteonblack" type="submit">Yes!</button>
+						<button class="btn btn-primary whiteonblack" type="submit" >Yes!</button>
 					</span>
 				</div>
 			</form>
@@ -54,7 +55,16 @@
 
 		</div>
 
-		<div class="col-lg-1 col-md-1 col-sm-2 col-xs-2"> 
+		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
+         
+          <!-- Theme Settings for GitHub/Twitter links will display here -->
+           <h3>Follow Me</h3>
+		   <ul class="">
+		     <li><a href="<?php echo get_option('github'); ?>">GitHub</a></li>
+		     <li><a href="<?php echo get_option('twitter'); ?>">Twitter</a></li>
+		   </ul>
+		  </div> 
+
 		</div>
 
 	</div>
